@@ -6,9 +6,9 @@ main {margin: 0.5rem;}
 
 a {color: #007b80; text-decoration: none;}
 a:hover {color: #9f0707; text-decoration: underline;}
-/* a:visited {color: #02696d;} */
+a:visited {color: #02696d;}
 
 footer {background-color: #9f0707; color: ivory;}
 footer a {color: ivory;}
-footer a:hover {color: #ffd000;}
-/* footer a:visited {color: #ca9b00;} */
+footer a:hover {color: #ffe15c;}
+footer a:visited {color: #ca9b00;}
