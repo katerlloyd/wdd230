@@ -1,5 +1,9 @@
 body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 
+header {background-color: #9f0707; color: ivory;}
+
+main {margin: 0.5rem;}
+
 a {color: #007b80; text-decoration: none;}
 a:hover {color: #9f0707; text-decoration: underline;}
 /* a:visited {color: #02696d;} */
@@ -8,5 +12,3 @@ footer {background-color: #9f0707; color: ivory;}
 footer a {color: ivory;}
 footer a:hover {color: #ffd000;}
 /* footer a:visited {color: #ca9b00;} */
-
-#dateLastUpdated {color: #ffd000;}
