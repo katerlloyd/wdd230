@@ -1,14 +1,44 @@
-body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+body {
+    max-width: 75%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 700px;
+    margin: auto;
+}
 
-header {background-color: #9f0707; color: ivory;}
 
-main {margin: 0.5rem;}
+header, footer {
+    background-color: #9f0707; 
+    color: ivory;
+    border-radius: 10px;
+    text-align: center;
+    padding-block: 1px;
+    line-height: 1.5em;
+}
+
+main {margin: 1rem;}
+
+img {
+    float: right;
+    box-shadow: 0 5px 15px 5px #00000066;
+    margin: 0.5rem;
+    object-fit: scale-down;
+    height: fit-content;
+    width: fit-content;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+h2 {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+}
 
 a {color: #007b80; text-decoration: none;}
 a:hover {color: #9f0707; text-decoration: underline;}
-a:visited {color: #02696d;}
 
-footer {background-color: #9f0707; color: ivory;}
+footer{line-height: 0.5em;}
+
 footer a {color: ivory;}
 footer a:hover {color: #ffe15c;}
-footer a:visited {color: #ca9b00;}
