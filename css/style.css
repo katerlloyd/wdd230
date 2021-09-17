@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=PT Sans|Raleway');
-
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway:wght@100&display=swap");
 
 body {
-    font-family: "PT Sans", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 16pt;
 }
 
@@ -29,8 +28,7 @@ header img {
 }
 
 h1 {
-    font-family: "Raleway", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: lighter;
+    font-family: "Raleway", sans-serif;
 }
 
 h2 {
@@ -39,11 +37,11 @@ h2 {
 }
 
 a {
-    color: #007b80; 
+    color: #057d81; 
     text-decoration: none;
 }
 a:hover {
-    color: #9f0707; 
+    color: #b65800; 
     text-decoration: underline;
 }
 
@@ -57,5 +55,5 @@ footer a {
 }
 
 footer a:hover {
-    color: #ffe15c;
+    color: #ffffc5;
 }
