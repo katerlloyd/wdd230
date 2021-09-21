@@ -2,33 +2,32 @@
 
 body {
     font-family: "PT Sans", sans-serif;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 header, main, footer {
     max-width: 800px;
-    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 header, footer {
     background-color: #9f0707; 
     color: ivory;
-    border-radius: 10px;
     text-align: center;
-    padding-block: 1px;
+    padding: 0.5em;
 }
 
 header img {
-    float: right;
-    box-shadow: 0 5px 15px 5px #00000066;
-    margin: 0.65rem;
     object-fit: scale-down;
     width: fit-content;
     height: auto;
+    
 }
 
 h1 {
     font-family: "Raleway", sans-serif;
+    margin: 0.5em;
 }
 
 h2 {
@@ -46,8 +45,7 @@ a:hover {
 }
 
 footer{
-    line-height: 0.5em;
-    font-size: 14pt;
+    font-size: 0.75em;
 }
 
 footer a {
