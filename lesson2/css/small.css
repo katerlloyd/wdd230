@@ -8,14 +8,17 @@ header, main, footer {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+header {
+    border-bottom: 4px solid #489b9e;
+}
 
 header, footer {
     background-color: #04345c; 
     color: ivory;
     text-align: center;
     padding: 0.25em;
-    box-shadow: 0 5px 10px 3px #00000066;
-    clip-path: inset(10px, 0, 10px, 0);
+    /* box-shadow: 0 5px 10px 3px #00000066;
+    clip-path: inset(10px, 0, 10px, 0); */
 }
 
 h1 {
@@ -39,6 +42,7 @@ a:hover {
 
 footer{
     font-size: 0.75em;
+    border-top: 4px solid #489b9e;
 }
 
 footer a {
