@@ -46,7 +46,7 @@ main p {
 
 main section {
     margin: 1.5rem;
-    padding: 0 1rem;
+    padding: 0 1.25rem;
     background-color: #e7f1f1;
     box-shadow: 0 2.5px 10px 2.5px #00000066;
 }
