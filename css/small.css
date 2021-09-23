@@ -25,6 +25,7 @@ header img {
 
 h1 {
     font-family: "Raleway", sans-serif;
+    text-shadow: 2px 2px 8px #00000066;
     margin: 0.5em;
 }
 

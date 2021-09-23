@@ -4,9 +4,10 @@ body {
 }
 
 header, main, footer {
-    max-width: 800px;
+    max-width: 1000px;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin: 0 auto;
 }
 header {
     border-bottom: 4px solid #489b9e;
@@ -17,11 +18,14 @@ header, footer {
     color: ivory;
     text-align: center;
     padding: 0.25em;
-    /* box-shadow: 0 5px 10px 3px #00000066;
-    clip-path: inset(10px, 0, 10px, 0); */
 }
 
 h1 {
+    font-family: "Raleway", sans-serif;
+    text-shadow: 2px 2px 8px #00000066;
+}
+
+h3 {
     font-family: "Raleway", sans-serif;
 }
 
