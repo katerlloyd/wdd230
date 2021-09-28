@@ -33,10 +33,6 @@ main ul {
     list-style: none;
 }
 
-main ul li {
-    content: "> ";
-}
-
 h2 {
     border-bottom: 1px solid gray;
     padding-bottom: 1rem;
