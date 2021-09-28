@@ -34,7 +34,7 @@ main ul {
 }
 
 main ul li {
-    content: '⭕ ⁘ ⁛ ⁙ ▣ ◈ ⋙ ⋇ ⩥ ⪢ ⫸';
+    content: linear-gradient(#057d81, gray);
 }
 
 h2 {
@@ -48,7 +48,6 @@ a {
 }
 a:hover {
     color: #b65800; 
-    text-decoration: underline;
 }
 
 footer{
