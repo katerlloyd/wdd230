@@ -34,7 +34,7 @@ main ul {
 }
 
 main ul li {
-    content: linear-gradient(#057d81, gray);
+    content: "> ";
 }
 
 h2 {
