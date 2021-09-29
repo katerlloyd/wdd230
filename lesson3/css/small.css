@@ -1,6 +1,6 @@
 body {
     font-family: "Raleway", sans-serif;
-    font-size: 16pt;
+    font-size: 15pt;
 }
 
 header, nav, main, footer {
@@ -32,6 +32,7 @@ nav {
     letter-spacing: 2px;
     border-bottom: 4px solid #098286;
     background-color: #2c2a29;
+    /* white-space: nowrap; */
 }
 
 nav ul {
@@ -53,10 +54,6 @@ nav ul li a {
 nav ul li a:hover {
     background-color: ivory;
     color: #2c2a29;
-}
-
-h1 {
-    text-shadow: 2px 2px 8px #00000066;
 }
 
 p {
