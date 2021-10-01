@@ -36,6 +36,7 @@ nav {
 }
 
 nav ul {
+    font-family: "Raleway", sans-serif;
     text-align: center;
     list-style-type: none;
 	margin: 0;
@@ -216,6 +217,13 @@ footer a:hover {
 
 /* ------------------Color Scheme Page------------------ */
 
+#color-table th {
+    font-family: "Calibri", sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
 #color1 {
     background-color: #1a1817;
     color: white;
@@ -233,14 +241,17 @@ footer a:hover {
 
 #color4 {
     background-color: #8bfbff;
+    color: #1a1817;
 }
 
 #color5 {
     background-color: white;
+    color: #1a1817;
 }
 
 #color6 {
     background-color: ivory;
+    color: #1a1817;
 }
 
 #header-footer-background-example {
