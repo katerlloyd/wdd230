@@ -87,7 +87,7 @@ main section {
 
 .persona-grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .persona-grid-container section ul, .persona-grid-container section h4 {

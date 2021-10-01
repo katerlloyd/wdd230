@@ -12,4 +12,9 @@
     nav ul li {
         flex: 1 1 100%; 
     }
+
+    .persona-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
