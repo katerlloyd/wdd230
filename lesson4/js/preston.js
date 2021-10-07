@@ -6,8 +6,6 @@ window.onresize = () => {
     if (window.innerWidth > 675) document.querySelector('.navigation').classList.remove('responsive')
 };
 
-// if (document.querySelector('.responsive').innerHTML != '&#10799;') document.querySelector('.bar-icon').innerHTML = '&#10799;';
-
 let months = [
     "January",
     "February",
@@ -36,3 +34,7 @@ let days = [
 const date = new Date(Date.now());
 
 document.getElementById("current-date").textContent = days[date.getDay()] + ", " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear();
+
+
+// const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
+// document.querySelector("#current-date").textContent = date.toLocaleDateString(undefined, options);
