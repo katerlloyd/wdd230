@@ -120,6 +120,17 @@ main section {
     text-align: center;
 }
 
+.friday-banner {
+    background-color: #098286;
+    color: ivory;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    display: block;
+    font-family: "Calibri", sans-serif;
+    border-radius: 10px;
+}
+
 a {
     color: #098286; 
     text-decoration: none;

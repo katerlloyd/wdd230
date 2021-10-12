@@ -120,6 +120,11 @@ main section {
     text-align: center;
 }
 
+.friday-banner {
+    background-color: #098286;
+    color: ivory;
+}
+
 a {
     color: #098286; 
     text-decoration: none;
