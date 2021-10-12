@@ -1,6 +1,6 @@
 
-const input = document.querySelector('#favchap');
-const button = document.querySelector('#addButton');
+const input = document.querySelector('input');
+const button = document.querySelector('button');
 const list = document.querySelector('.list');
 
 
