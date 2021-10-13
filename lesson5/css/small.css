@@ -131,6 +131,42 @@ main section {
     border-radius: 10px;
 }
 
+.flex {
+    font-family: "Calibri", sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex img {
+    padding: 0.25rem;
+}
+
+.flex-col {
+    background-color: #2c2a29;
+    color: ivory;
+    border: 2px solid white;
+    flex: 1 1 auto;
+}
+
+.flex-col:hover {
+    opacity: 0.75;
+	background-color: black;
+}
+
+.col-head {
+    background-color: #098286;
+    color: ivory;
+    display: block;
+    padding: 0.25rem;
+    border-bottom: 3px solid white;
+    font-weight: bold;
+}
+
+.data {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
 a {
     color: #098286; 
     text-decoration: none;
