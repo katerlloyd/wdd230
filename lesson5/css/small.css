@@ -22,6 +22,17 @@ header, footer {
     color: ivory;
 }
 
+.friday-banner {
+    background-color: #098286;
+    color: ivory;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    display: block;
+    font-family: "Calibri", sans-serif;
+    border-radius: 10px;
+}
+
 .logo {
     max-width: 5rem;
     height: auto;
@@ -118,17 +129,6 @@ main section {
     padding: 0.5rem 1.5rem;
     box-shadow: 0 2.5px 10px 2.5px #00000066;
     text-align: center;
-}
-
-.friday-banner {
-    background-color: #098286;
-    color: ivory;
-    text-align: center;
-    padding: 1rem;
-    margin: 1rem;
-    display: block;
-    font-family: "Calibri", sans-serif;
-    border-radius: 10px;
 }
 
 .flex {
