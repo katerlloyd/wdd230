@@ -37,18 +37,25 @@
             </ul>
         </nav>
         <main>
-            <section>
-                <h2>Preston, Idaho</h2>
-            </section>
-            <section>
-                <img src="" alt="">
-                <h3>Weather Summary</h3>
-                <p>Currently: Partly Cloudy</p>
-                <p>Temperature: 40&#176;F</p>
-                <p>Wind Chill: 28&#176;F</p>
-                <p>Humidity: 58%</p>
-                <p>Wind Speed: 9 mph</p>
-            </section>
+            <h2>Preston, Idaho</h2>
+            <div class="hero-div">
+                <img src="images/hike.jpg" alt="Hikers walking through flowered hills" id="hike-img">
+                <section class="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <div class="weather-summary-grid">
+                        <span class="label">Currently: </span>
+                        <span class="currently">Partly Cloudy</span>
+                        <span class="label">Temperature: </span>
+                        <span class="temperature">40&#176;F</span>
+                        <span class="label">Wind Chill: </span>
+                        <span class="wind-chill">28&#176;F</span>
+                        <span class="label">Humidity: </span>
+                        <span class="humidity">58%</span>
+                        <span class="label">Wind Speed: </span>
+                        <span class="wind-speed">9 mph</span>
+                    </div>
+                </section>
+            </div>
             <section> 
                 <h3>Five Day Forecast</h3>
                 <div class="flex">
@@ -81,12 +88,28 @@
             </section>
             <section>
                 <h3>Article Title</h3>
+                <img src="images/bike-race.jpg" alt="Two bikers racing">
                 <p>Article</p>
-                <p>Article Image</p>
             </section>
-            <section>
+            <section class="contact-info">
                 <h3>Contact Information</h3>
-                <p>Map</p>
+                <div class="info-grid">
+                    <a href="https://www.google.com/maps/place/Preston,+ID+83263/@42.0997416,-111.9153444,13z/data=!3m1!4b1!4m5!3m4!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!8m2!3d42.0963133!4d-111.8766173" target="_blank"><img src="images/preston-map.jpg" alt="Map of Preson, Idaho"></a>
+                    <div class=contact-info-grid>
+                        <img src="" alt="Address icon">
+                        <p>123 N 4th W Preston, ID 83263</p>
+                        <img src="" alt="Phone icon">
+                        <p>(123) 456-7890</p>
+                        <img src="" alt="Email icon">
+                        <p>solarisweather@swi.com</p>
+                        <div class="social-media">
+                            <a href=""></a><img src="" alt="Facebook icon"></a>
+                            <a href=""></a><img src="" alt="Twitter icon"></a>
+                            <a href=""></a><img src="" alt="Icon"></a>
+                            <a href=""></a><img src="" alt="Icon"></a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
