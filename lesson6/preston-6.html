@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
         <script defer src="js/preston.js"></script>
+        <script defer src="js/windchill.js"></script>
     </head>
     <body>
         <header>
@@ -36,20 +37,23 @@
         <main>
             <h2>Preston, Idaho</h2>
             <div class="hero-div">
-                <img src="images/hike.jpg" alt="Hikers walking through flowered hills" id="hike-img">
+                <picture>
+                    <source srcset="images/hero-600.jpg" media="(min-width: 600px) and (max-width: 899px)">
+                    <source srcset="images/hero-900.jpg" media="(min-width: 900px)">
+                    <img src="images/hero-375.jpg" alt="Sunny field with mountains in the background" id="hike-img">
                 <section class="weather-summary">
                     <h3>Weather Summary</h3>
                     <div class="weather-summary-grid">
                         <span class="label">Currently: </span>
                         <span class="currently">Partly Cloudy</span>
                         <span class="label">Temperature: </span>
-                        <span class="temperature">40&#176;F</span>
+                        <div><span class="temperature">40</span>&#176;F</div>
                         <span class="label">Wind Chill: </span>
-                        <span class="wind-chill">28&#176;F</span>
+                        <div><span class="windchill"></span>&#176;F</div>
                         <span class="label">Humidity: </span>
-                        <span class="humidity">58%</span>
+                        <div><span class="humidity">58</span>%</div>
                         <span class="label">Wind Speed: </span>
-                        <span class="wind-speed">9 mph</span>
+                        <div><span class="windspeed">9</span> mph</div>
                     </div>
                 </section>
             </div>
@@ -57,35 +61,35 @@
                 <h3>Five Day Forecast</h3>
                 <div class="flex">
                     <div class="flex-col">
-                        <span class="col-head">Wed</span>
+                        <span class="col-head">Wednesday</span>
                         <div class="weather-info">
                             <img src="images/partly-cloudy.png" alt="Sun behind clouds">
                             <span class="data">39&#176;F</span>
                         </div>
                     </div>
                     <div class="flex-col">
-                        <span class="col-head">Thurs</span>
+                        <span class="col-head">Thursday</span>
                         <div class="weather-info">
                             <img src="images/cloudy-snow.png" alt="Snow falling from clouds">
                             <span class="data">39&#176;F</span>
                         </div>
                     </div>
                     <div class="flex-col">
-                        <span class="col-head">Fri</span>
+                        <span class="col-head">Friday</span>
                         <div class="weather-info">
                             <img src="images/partly-cloudy.png" alt="Sun behind clouds">
                             <span class="data">43&#176;F</span>
                         </div>
                     </div>
                     <div class="flex-col">
-                        <span class="col-head">Sat</span>
+                        <span class="col-head">Saturday</span>
                         <div class="weather-info">
                             <img src="images/sun.png" alt="Sun">
                             <span class="data">51&#176;F</span>
                         </div>
                     </div>
                     <div class="flex-col">
-                        <span class="col-head">Sun</span>
+                        <span class="col-head">Sunday</span>
                         <div class="weather-info">
                             <img src="images/partly-cloudy.png" alt="Sun behind clouds">
                             <span class="data">56&#176;F</span>
