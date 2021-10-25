@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+img {
+    border: ridge rgb(240, 237, 237) 2px;
+    border-radius: 15px;
+    filter: none;
+    margin: 0.25rem;
+    transition: filter 0.5s;
+}
+
+img[data-src] {
+    filter: blur(0.2rem);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
