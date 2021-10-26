@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
+        <script defer src="js/gallery.js"></script>
     </head>
     <body>
         <header>
@@ -25,7 +26,7 @@
             <ul class="navigation">
                 <li class="bar-icon"><a href="#">&#9776;</a></li>
                 <li><a href="#">Home</a></li>
-                <li><a href="preston-6.html">Preston</a></li>
+                <li><a href="preston-7.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
@@ -34,11 +35,48 @@
         </nav>
         <main>
             <h2>Weather Gallery</h2>
-            
+            <div class="gallery-grid">
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://placeimg.com/424/275/nature" alt="Random nature picture">
+                    <p>CAPTION</p>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://placeimg.com/424/275/animals" alt="Random animal picture">
+                    <p>CAPTION</p>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://placeimg.com/424/275/arch" alt="Random archiecture picture">
+                    <p>CAPTION</p>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://placeimg.com/424/275/tech" alt="Random tech picture">
+                    <figcaption>CAPTION</figcaption>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://placeimg.com/424/275/tech/grayscale" alt="Random grayscale tech picture">
+                    <figcaption>CAPTION</figcaption>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://placeimg.com/424/275/nature" alt="Random nature picture">
+                    <figcaption>CAPTION</figcaption>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://placeimg.com/424/275/people" alt="Random people picture">
+                    <figcaption>CAPTION</figcaption>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://placeimg.com/424/275/nature/sepia" alt="Random sepia nature picture">
+                    <figcaption>CAPTION</figcaption>
+                </picture>
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="https://placeimg.com/424/275/people" alt="Random people picture">
+                    <figcaption>CAPTION</figcaption>
+                </picture>
+            </div>
         </main>
         <footer>
-            <p>&#169; <span id="preston-copyright-year"></span> Solaris Weather &#38; Activities</p>
-            <p><span id="current-date"></span></p>
+            <p>&#169; <span id="gallery-copyright-year"></span> Solaris Weather &#38; Activities</p>
+            <p><span id="gallery-current-date"></span></p>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>WebFont.load({google: {families: ['Raleway:200&display=swap', 'Barlow&display=swap']}});</script>
