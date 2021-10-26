@@ -37,6 +37,15 @@ window.onresize = () => {
     if (window.innerWidth > 675) document.querySelector('.navigation').classList.remove('responsive')
 };
 
+// function hideCaptions() {
+//     let captions = document.querySelectorAll('figcaption');
+//     if (!window.matchMedia('(min-width: 60rem)')) {
+//         captions.display = 'none';
+//     } else {
+//         captions.display = 'block';
+//     }
+// }
+
 const date = new Date(Date.now());
 
 const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
