@@ -15,9 +15,12 @@
 	nav {
 		font-size: 1.1rem;
     }  
+
+	main {
+		padding: 0 7%;
+	}
 	
 	.gallery-grid {
-		padding: 0 7%;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
