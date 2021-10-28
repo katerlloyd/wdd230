@@ -1,3 +1,4 @@
+//#region Lazy Loading
 const images = document.querySelectorAll('img[data-src]');
 
 const imageOptions = {
@@ -28,7 +29,10 @@ if('IntersectionObserver' in window) {
         loadImages(img); 
     });
 }
+//#endregion 
 
+
+//#region Responsive Navigation Bar
 document.querySelector('.bar-icon').addEventListener('click', () => {
     document.querySelector('.navigation').classList.toggle('responsive');
 }, false);
@@ -36,19 +40,43 @@ document.querySelector('.bar-icon').addEventListener('click', () => {
 window.onresize = () => {
     if (window.innerWidth > 675) document.querySelector('.navigation').classList.remove('responsive')
 };
+//#endregion 
 
-// function hideCaptions() {
-//     let captions = document.querySelectorAll('figcaption');
-//     if (!window.matchMedia('(min-width: 60rem)')) {
-//         captions.display = 'none';
-//     } else {
-//         captions.display = 'block';
-//     }
-// }
 
+//#region Copyright Year and Current Date
 const date = new Date(Date.now());
 
 const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
 document.querySelector("#gallery-current-date").textContent = date.toLocaleDateString('en-UK', options);
 
 document.querySelector("#gallery-copyright-year").textContent = date.getFullYear();
+//#endregion 
+
+
+//#region Local Storage
+const daysSinceLastVisit = document.querySelector('#gallery-last-visited');
+
+function setDateLastVisited() {
+    localStorage.setItem('dateLastVisited', date);
+}
+
+function getDateLastVisited(daysSinceLastVisit) {
+    try {
+        const milisecondsToDays = 8640000;
+        const lastVisit = localStorage.getItem('dateLastVisisted') || date;
+        const days = Math.round((lastVisit - date) / milisecondsToDays);
+
+        if (days > 0) {
+            daysSinceLastVisit.textContent = days;
+        } else {
+            daysSinceLastVisit.textContent = 0;
+        }
+    }
+    catch (er) {
+        daysSinceLastVisit.textContent = 0;
+    }
+}
+
+getDateLastVisited(daysSinceLastVisit)
+setDateLastVisited()
+//#endregion 

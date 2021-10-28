@@ -291,3 +291,8 @@ footer{
 .footer-info {
     padding: 1rem;
 }
+
+#gallery-last-visited {
+    color: #8bfbff;
+    font-weight: bold;
+}
