@@ -157,7 +157,7 @@ p {
     filter: blur(0.15rem);
 }
 
-.gallery-grid picture {
+.gallery-grid figure {
     box-shadow: 0 2.5px 10px 2.5px #00000066;
     margin: 0 auto;
     max-width: fit-content;
