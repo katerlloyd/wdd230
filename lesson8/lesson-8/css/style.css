@@ -28,6 +28,10 @@ thead th {
     font-weight: bold;
 }
 
+tbody th, tfoot th {
+    font-weight: normal;
+}
+
 thead tr:first-child th:first-child {
     background-color: #7fb9c2;
     color: black;
@@ -35,7 +39,7 @@ thead tr:first-child th:first-child {
     font-weight: bold;
 }
 
-tbody tr:nth-child(5) td:first-child {
+tbody tr:nth-child(5) th:first-child {
     font-style: italic;
 }
 
@@ -51,5 +55,5 @@ tbody tr:nth-child(odd) {
 tfoot {
     background-color: #7fb9c2;
     color: black;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
