@@ -85,8 +85,8 @@
                         </label>
                     </fieldset>
                     <fieldset>
-                        <label for="storm-region">
-                            <select id="region-list" name="storm-region" id="storm-region" onchange="selectResponse()">
+                        <label for="region-list">
+                            <select id="region-list" name="storm-region" onchange="selectResponse()">
                                 <option value="" disabled selected>Select Storm Region</option>
                                 <option value="Preston">Preston</option>
                                 <option value="Soda Springs">Soda Springs</option>
@@ -128,11 +128,11 @@
                     <h3>Additional Information</h3>
                     <fieldset id="full-area">
                         <label for="comments">Comments 
-                            <textarea name="comments" rows="8"></textarea>
+                            <textarea name="comments" id="comments" rows="8"></textarea>
                         </label>
                     </fieldset>
                     <div id="button">
-                        <input type="submit" name="submit" id="button" value="Report Storm">
+                        <input type="submit" name="submit" id="submit" value="Report Storm">
                     </div>
                 </div>
             </form>
