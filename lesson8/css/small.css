@@ -362,7 +362,6 @@ textarea {
 #storm-severity {
     border: none;
     display: block;
-    vertical-align: bottom;
 }
 
 .form-grid h3 {
