@@ -64,7 +64,7 @@ function getDateLastVisited(daysSinceLastVisit) {
     try {
         const milisecondsToDays = 8640000;
         const lastVisit = localStorage.getItem('dateLastVisisted') || date;
-        const days = Math.round((lastVisit - date) / milisecondsToDays);
+        const days = Math.round((date - lastVisit) / milisecondsToDays);
 
         if (days > 0) {
             daysSinceLastVisit.textContent = days;
