@@ -40,22 +40,22 @@
                     <h3>Contact Information</h3>
                     <fieldset>
                         <label for="full-name">
-                            <input type="text" name="full-name" required pattern="[A-Za-z]{5,}" placeholder="Full Name">
+                            <input type="text" name="full-name" id="full-name" required pattern="[A-Za-z]{5,}" placeholder="Full Name">
                         </label>
                     </fieldset>
                     <fieldset>
                         <label for="phone">
-                            <input type="tel" name="phone" required placeholder="Phone Number">
+                            <input type="tel" name="phone" id="phone" required placeholder="Phone Number">
                         </label>
                     </fieldset>
                     <fieldset>
                         <label for="email">
-                            <input type="email" name="email" placeholder="johndoe@email.com">
+                            <input type="email" name="email" id="email" placeholder="johndoe@email.com">
                         </label>
                     </fieldset>
                     <fieldset>
                         <label for="zip">
-                            <input type="number" name="zip" required placeholder="Zip Code">
+                            <input type="number" name="zip" id="zip" required placeholder="Zip Code">
                         </label>
                     </fieldset>
                     <fieldset>
@@ -81,12 +81,12 @@
                     <h3>Storm Information</h3>
                     <fieldset>
                         <label for="storm-date">Storm Date 
-                            <input type="date" name="storm-date">
+                            <input type="date" name="storm-date" id="storm-date">
                         </label>
                     </fieldset>
                     <fieldset>
                         <label for="storm-region">
-                            <select id="region-list" name="storm-region" onchange="selectResponse()">
+                            <select id="region-list" name="storm-region" id="storm-region" onchange="selectResponse()">
                                 <option value="" disabled selected>Select Storm Region</option>
                                 <option value="Preston">Preston</option>
                                 <option value="Soda Springs">Soda Springs</option>
@@ -96,7 +96,7 @@
                     </fieldset>
                     <fieldset>
                         <label for="storm-type">
-                            <input list="storm-list" name="storm-type" placeholder="Select Storm Type">
+                            <input list="storm-list" name="storm-type" id="storm-type" placeholder="Select Storm Type">
                         </label>
                         <datalist id="storm-list">
                             <option value="Flash Flood">
@@ -132,7 +132,7 @@
                         </label>
                     </fieldset>
                     <div id="button">
-                        <input type="submit" name="submit" value="Report Storm">
+                        <input type="submit" name="submit" id="button" value="Report Storm">
                     </div>
                 </div>
             </form>
