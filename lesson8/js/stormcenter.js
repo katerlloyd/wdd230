@@ -17,3 +17,19 @@ document.querySelector("#stormcenter-current-date").textContent = date.toLocaleD
 
 document.querySelector("#stormcenter-copyright-year").textContent = date.getFullYear();
 //#endregion 
+
+//#region Storm Severity
+function toggleRating(rating) {
+    document.getElementById("value").innerHTML = rating;
+}
+//#endregion
+
+//#region Region Response
+function selectResponse() {
+	const s = document.querySelector('#selected')
+	const sel = document.querySelector('#storm-region');
+	s.style.display = "block";
+	s.textContent = sel.value;
+	
+}
+//#endregion

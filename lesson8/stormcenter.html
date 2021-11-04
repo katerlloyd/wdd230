@@ -35,33 +35,107 @@
         </nav>
         <main>
             <h2>Storm Center</h2>
-            <form action go to thanks page in anchor tag>
-            <label>
-                <input>
-            </label>
-            button should not say submit, should say report storm or register use get instead of post for this page
-            put all in form element and the form will have a "submit" button
-
-            <!-- The form page must contain the following elements, types and attributes:
-            full name using input of type text and is required and only accepts alpha characters with a minimum of five characters using a regular expression pattern (Links to an external site.)
-            email using input of type email and use a placeholder to provide a demo email
-            phone number using input of type tel and is required
-            zip code using input of type number and is required
-            storm date using input of type date
-            storm type using input with a list attribute referencing a datalist of suggestions that include "Flash Flood," "Hail," "Hurricane," "Thunderstorm," and "Tornado."
-            storm severity using type range (1 to 10) with a corresponding label that indicates the current range value from 1 to 10.
-            Hint: See the Pen HTML Form example objects (Links to an external site.)
-            storm region using select with drop-down options of "Preston", "Soda Springs", and "Fish Haven".
-            Add a first option with the text "Select Region ..." that is shown by default but not selectable (disabled).
-            The rest of the options should have relevant value attributes.
-            user in-danger level using input of type radio with options and values of "yes," "maybe," and "no."
-            additional information or comments using a textarea
-            form submission button using input of type submit
-            Each field element should have an appropriate name attribute
-            Each field element including the textarea should be encased in a <label> tag to support accessibility (Links to an external site.).
-            Ensure that the design meets standards such as eye tracking in a straight line and proper keyboard progression for accessibility. See Designing more Efficient Forms (Links to an external site.)
-            Create a new page labeled "thanks.html" that expresses gratitude for filling out the form. This page should load when the user has successfully submitted the form. The design should follow your weather site pattern and does not need to have a lot of actual content.
-            Hint: Review the <form> attributes (Links to an external site.). -->
+            <form action="thanks.html" method="get" class="form-grid">
+                <div id="user-info">
+                    <h3>Contact Information</h3>
+                    <fieldset>
+                        <label for="full-name">
+                            <input type="text" name="full-name" required pattern="[A-Za-z]{5,}" placeholder="Full Name">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="phone">
+                            <input type="tel" name="phone" required placeholder="Phone Number">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">
+                            <input type="email" name="email" placeholder="johndoe@email.com">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="zip">
+                            <input type="number" name="zip" required placeholder="Zip Code">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Are you in danger?</legend>
+                        <div class="radio-selecion">
+                            <label for="user-danger-level-yes">    
+                                <input type="radio" id="user-danger-level-yes" name="danger-level" value="Yes"> 
+                            Yes</label>
+                        </div>
+                        <div class="radio-selecion">
+                            <label for="user-danger-level-maybe"> 
+                                <input type="radio" id="user-danger-level-maybe" name="danger-level" value="Maybe"> 
+                            Maybe</label>
+                        </div>
+                        <div class="radio-selecion">
+                            <label for="user-danger-level-no">
+                                <input type="radio" id="user-danger-level-no" name="danger-level" value="No" checked> 
+                            No</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div id="storm-info">
+                    <h3>Storm Information</h3>
+                    <fieldset>
+                        <label for="storm-date">Storm Date 
+                            <input type="date" name="storm-date">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="storm-region">
+                            <select id="region-list" name="storm-region" onchange="selectResponse()">
+                                <option value="" disabled selected>Select Storm Region</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Soda Springs">Soda Springs</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="storm-type">
+                            <input list="storm-list" name="storm-type" placeholder="Select Storm Type">
+                        </label>
+                        <datalist id="storm-list">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </fieldset>
+                    <fieldset>
+                        <label class="flexly" for="storm-severity">Storm Severity: <span id="value">4</span> &#160;&#160;
+                            <input type="range" name="storm-severity" id="storm-severity" value="4" min="1" max="10" step="1" list="ranges" oninput="toggleRating(this.value)" onchange="toggleRating(this.value)">
+                        </label>
+                        <datalist id="ranges">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                    </fieldset>
+                </div>
+                <div id="additional-info">
+                    <h3>Additional Information</h3>
+                    <fieldset id="full-area">
+                        <label for="comments">Comments 
+                            <textarea name="comments" rows="7"></textarea>
+                        </label>
+                    </fieldset>
+                    <div id="button">
+                        <input type="submit" name="submit" value="Report Storm">
+                    </div>
+                </div>
+            </form>
         </main>
         <footer>
             <p>&#169; <span id="stormcenter-copyright-year"></span> Solaris Weather &#38; Activities</p>
