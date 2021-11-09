@@ -1,0 +1,56 @@
+body {
+    background-color: #947d40;
+    font-family: "Calibri", sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+main {
+    margin: 1rem;
+}
+
+h1, h2 {
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    border-bottom: 1px solid #947d40;
+    padding-bottom: 0.75rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+section {
+    background-color: #fff4d7;
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    padding:  1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    margin: 1rem;
+}
+
+@media only screen and (min-width: 45rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
