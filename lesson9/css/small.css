@@ -320,8 +320,17 @@ input, select {
     border: none;
     border-bottom: 2px solid #8bfbff;
     color: #969590;
+    cursor: pointer;
     outline: none;
     padding: 0.5rem;
+}
+
+#region-list option {
+    color: #1a1817;
+}
+
+#region-list option:first-of-type {
+    color: #969590;
 }
 
 #storm-severity {
@@ -338,6 +347,10 @@ input, select {
     color: ivory;
     font-weight: bold;
     padding: 10px 30px;
+}
+
+#button input:focus {
+    background-color: #1a1817;
 }
 
 ::placeholder {
@@ -367,4 +380,26 @@ textarea {
 .form-grid h3 {
     color: ivory;
     text-align: left;
+}
+
+input[type='radio'] {
+    margin-right: 0.5rem;
+    transform: scale(1.5);
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type='range'] { 
+    margin-left: 2rem;
+    transform: scale(1.5);
+}
+
+input:focus {
+    color: #8bfbff;
+}
+
+#region-list:focus {
+    color: #8bfbff;
 }
