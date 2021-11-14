@@ -19,31 +19,61 @@ document.querySelector("#home-copyright-year").textContent = date.getFullYear();
 //#endregion 
 
 //#region API Request
-// const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-// fetch(requestURL).then(function (response) {return response.json();}).then(function (jsonObject) {
-//     console.table(jsonObject);
-//     const prophets = jsonObject['prophets'];
-//     for (let i = 0; i < prophets.length; i++ ) {
+fetch(requestURL).then(function (response) {return response.json();}).then(function (jsonObject) {
+    console.table(jsonObject);
+    const towns = jsonObject['towns'];
+    for (let i = 0; i < towns.length; i++ ) {
+        if (towns[i].name === "Preston" || towns[i].name === "Fish Haven" || towns[i].name === "Soda Springs") {
     
-//         let card = document.createElement('section');
-//         let h2 = document.createElement('h2');
-//         let p1 = document.createElement('p');
-//         let p2 = document.createElement('p');
-//         let img = document.createElement('img');
+            let towncontainer = document.createElement('div');
+            towncontainer.classList.add('town-container');
+            let town = document.createElement('section');
+            town.classList.add('town-data');
+            let h2 = document.createElement('h2');
+            let a = document.createElement('a');
+            let q = document.createElement('q');
+            let paragraphs = document.createElement('section');
+            paragraphs.classList.add('paragraph-block');
+            let p1 = document.createElement('p');
+            let p2 = document.createElement('p');
+            let p3 = document.createElement('p');
+            let imagesection = document.createElement('section');
+            imagesection.classList.add('town-img');
+            let img = document.createElement('img');
 
-//         h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-//         p1.textContent = 'Date of Birth: ' + prophets[i].birthdate;
-//         p2.textContent = 'Place of Birth: ' + prophets[i].birthplace;
-//         img.setAttribute('src', prophets[i].imageurl);
-//         img.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order);
+            if (towns[i].name === "Preston") {
+                a.setAttribute('href', "preston-9.html");
+            } else if (towns[i].name === "Fish Haven") {
+                a.setAttribute('href', "#");
+            } else if (towns[i].name === "Soda Springs") {
+                a.setAttribute('href', "#");
+            } else {
+                a.setAttribute('href', "#");
+            }
 
-//         card.appendChild(h2);
-//         card.appendChild(p1);
-//         card.appendChild(p2);
-//         card.appendChild(img);
+            a.textContent = towns[i].name;
+            q.textContent = towns[i].motto;
+            p1.textContent = 'Year Founded: ' + towns[i].yearFounded;
+            p2.textContent = 'Population: ' + towns[i].currentPopulation;
+            p3.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall;
+            img.setAttribute('src', 'images/' + towns[i].photo);
+            img.setAttribute('alt', towns[i].name);
 
-//         document.querySelector('div.cards').appendChild(card);
-//     }
-// });
+            h2.appendChild(a);
+            town.appendChild(h2);
+            town.appendChild(q);
+            paragraphs.appendChild(p1);
+            paragraphs.appendChild(p2);
+            paragraphs.appendChild(p3);
+            town.appendChild(paragraphs);
+            imagesection.appendChild(img);
+            towncontainer.appendChild(town);
+            towncontainer.appendChild(imagesection);
+
+            document.querySelector('div.home-grid').appendChild(towncontainer);
+        }
+    }
+});
 //#endregion

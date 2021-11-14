@@ -8,7 +8,6 @@ window.onresize = () => {
 };
 //#endregion 
 
-
 //#region Copyright Year and Current Date
 const date = new Date(Date.now());
 
@@ -26,7 +25,7 @@ function toggleRating(rating) {
 
 //#region Region Response
 function selectResponse() {
-	const s = document.querySelector('#selected')
+	const s = document.querySelector('#selected');
 	const sel = document.querySelector('#storm-region');
 	s.style.display = "block";
 	s.textContent = sel.value;

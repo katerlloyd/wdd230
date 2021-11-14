@@ -81,4 +81,18 @@
 	#user-info fieldset, #storm-info fieldset {
 		margin-bottom: 1rem;
 	}
+
+	.home-grid .town-container {
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: 1rem;
+	}
+	
+	.home-grid .town-container:nth-child(even) .town-img {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	
+	.home-grid .town-container:nth-child(even) .town-data {
+		grid-column: 2;
+	}
 }

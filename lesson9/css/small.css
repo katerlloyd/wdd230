@@ -283,6 +283,7 @@ a {
     color: #098286; 
     text-decoration: none;
 }
+
 a:hover {
     font-weight: bold;
 }
@@ -402,4 +403,49 @@ input:focus {
 
 #region-list:focus {
     color: #8bfbff;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.home-grid .town-container {
+    background-color: #2c2a29;
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    color: ivory;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+}
+
+.home-grid h2 {
+    border-bottom: 1px solid #8bfbff;
+    padding-bottom: 1rem;
+}
+
+.home-grid q {
+    font-size: medium;
+    font-style: italic;
+}
+
+.home-grid a:focus {
+    color: #098286; 
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.home-grid a:hover {
+    color: #8bfbff; 
+}
+
+.home-grid .paragraph-block {
+    background-color: #1a1817;
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    margin: 1rem 0;
+}
+
+.home-grid img {
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    max-width: 100%;
 }
