@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Solaris Weather &#38; Activities weather image gallery.">
+        <title>Solaris Weather | Gallery</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script defer src="js/gallery.js"></script>
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img class="logo" src="images/logo-white.jpg" alt="Logo of a white cirle with two lines through it">
+            </figure>
+            <section class="headings">
+                <h1>Solaris Weather &#38; Activities</h1>
+                <q class="motto">Community fun during the storms of life.</q>
+            </section>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li class="bar-icon"><a href="#">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston-10.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Weather Gallery</h2>
+            <div class="gallery-grid">
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/flowers.jpg" alt="Sunlit flowers">
+                    <figcaption>Sunlit flowers <span id="count"></span>in Preston</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/partly.jpg" alt="Partly cloudy sky over field">
+                    <figcaption>Cloudy skies over Fish Haven</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/sunset.jpg" alt="Sunset over field">
+                    <figcaption>Sunset over Soda Springs</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/lights.jpg" alt="Traffic lights in the rain">
+                    <figcaption>Traffic lights in rainy Fish Haven</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/sunny-flowers.jpg" alt="Sunny flowers and tree">
+                    <figcaption>Sunny park in Soda Springs</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/autumn.jpg" alt="Snowy mountain with autumn trees">
+                    <figcaption>Snowy autumn trees in Preston</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/forest.jpg" alt="Sunny forest">
+                    <figcaption>Sunny Preston forest</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/storm.jpg" alt="Storm over road">
+                    <figcaption>Storm over Fish Haven road</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/placeholder.jpg" data-src="images/wind.jpg" alt="Windy field">
+                    <figcaption>High winds in Soda Springs</figcaption>
+                </figure>
+            </div>
+        </main>
+        <footer>
+            <p>&#169; <span id="gallery-copyright-year"></span> Solaris Weather &#38; Activities</p>
+            <p><span id="gallery-current-date"></span></p>
+            <p>Days since last visit: <span id="gallery-last-visited"></span></p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>WebFont.load({google: {families: ['Raleway:200&display=swap', 'Barlow&display=swap']}});</script>
+    </body>
+</html>
