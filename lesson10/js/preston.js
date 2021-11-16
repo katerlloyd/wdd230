@@ -34,27 +34,36 @@ fetch(apiURL2).then((response) => response.json()).then((jsonObject) => {
     let forecast = jsonObject.list;
 
     for (let i = 0; i < forecast.length; i++) {
-        let dt = forecast[i].dt_txt;
-        dt = dt.substring(11, 24);
-        console.log(dt);
-        // if (dt === '18:00:00') {
+        
+        let forecastdate_string = forecast[i].dt_txt;
+        let dt = forecastdate_string.substring(11, 24);
+        let forecastdate = new Date(forecastdate_string);
+        
+        if (dt === '18:00:00') {
 
-        //     let flexcol = document.createElement('div');
-        //     flexcol.classList.add('flex-col');
+            let flexcol = document.createElement('div');
+            flexcol.classList.add('flex-col');
+
+            let col_head_span = document.createElement('span');
+            col_head_span.classList.add('col-head');
+            col_head_span.textContent = forecastdate.toLocaleString("default", {weekday: "long"});
+            flexcol.appendChild(col_head_span);
+
+            let weather_info_div = document.createElement('div');
+            weather_info_div.classList.add('weather-info');
+            flexcol.appendChild(weather_info_div);
+
+            let img = document.createElement('img');
+            img.setAttribute("src", `http://openweathermap.org/img/wn/${forecast[i].weather["0"].icon}@2x.png`);
+            img.setAttribute("alt", forecast[i].weather["0"].description);
+            weather_info_div.appendChild(img);
+
+            let data_span = document.createElement('span');
+            data_span.classList.add('data');
+            data_span.textContent = Math.round(forecast[i].main.temp) + '\&#176;F';
+            weather_info_div.appendChild(data_span);            
     
-    
-    
-        //     document.querySelector('div.flex').appendChild(flexcol);
-        // }
+            document.querySelector('div.flex').appendChild(flexcol);
+        }
     }
   });
-
-
-
-/* <div class="flex-col">
-                        <span class="col-head">Wednesday</span>
-                        <div class="weather-info">
-                            <img src="images/partly-cloudy.png" alt="Sun behind clouds">
-                            <span class="data">39&#176;F</span>
-                        </div>
-                    </div> */
