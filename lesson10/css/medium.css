@@ -1,5 +1,7 @@
 @media only screen and (min-width: 43rem) {
 	
+	/* ALL PAGES */
+
 	nav {
 		font-size: 0.8rem;
 	}
@@ -37,15 +39,13 @@
 		margin: 0;
 	}
 	
+	/* TOWN PAGES */
+
 	.hero-div {
 		position: relative;    
 	}
 
-	.gallery-grid {
-		grid-template-columns: 1fr 1fr;
-	}
-
-	#hike-img {
+	.hero-img {
 		box-shadow: 0 2.5px 10px 2.5px #00000066;
 	}
 
@@ -65,22 +65,13 @@
 		box-shadow: 0 2.5px 10px 2.5px #00000066;
 	}
 
-	.info-grid {
-		grid-template-columns: 1fr 1fr;
-		column-gap: 1rem;
-	}
+	/* GALLERY */
 
-	#preston-map {
-		margin: 0.5rem;
-	}
-
-	.form-grid {
+	.gallery-grid {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	#user-info fieldset, #storm-info fieldset {
-		margin-bottom: 1rem;
-	}
+	/* HOME */
 
 	.home-grid .town-container {
 		grid-template-columns: 1fr 1fr;
@@ -94,5 +85,26 @@
 	
 	.home-grid .town-container:nth-child(even) .town-data {
 		grid-column: 2;
+	}
+
+	/* STORMCENTER */
+
+	.form-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#user-info fieldset, #storm-info fieldset {
+		margin-bottom: 1rem;
+	}
+
+	/* FOOTER */
+
+	.info-grid {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1rem;
+	}
+
+	#preston-map {
+		margin: 0.5rem;
 	}
 }

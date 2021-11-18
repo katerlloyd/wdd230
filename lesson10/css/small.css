@@ -1,18 +1,11 @@
+/* ALL PAGES */
+
 body {
     box-sizing: border-box;
     color: #1a1817;
     font-family: "Raleway", sans-serif;
     font-size: 20px;
     font-weight: 200;
-}
-
-.friday-banner {
-    background-color: #098286;
-    border: 1px solid #8bfbff;
-    color: ivory;
-    font-family: "Barlow", sans-serif;
-    padding: 0.75rem;
-    text-align: center;
 }
 
 header, nav, footer {
@@ -143,41 +136,26 @@ p {
     font-family: "Barlow", sans-serif;
 }
 
-.hero-div {
-    margin: 0 auto;
-}
-
-.gallery-grid {
-    display: grid;
-    font-family: "Barlow", sans-serif;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
-}
-
-.gallery-grid img {
-    filter: none;
-    transition: filter 0.5s;
-}
-    
-.gallery-grid img[data-src] {
-    filter: blur(0.15rem);
-}
-
-.gallery-grid figure {
-    box-shadow: 0 2.5px 10px 2.5px #00000066;
-    margin: 0 auto;
-    max-width: fit-content;
-}
-
-figcaption {
-    padding: 0.75rem 0;
-}
-
 img {
     max-width: 100%;
 }
 
-#hike-img {
+a {
+    color: #098286; 
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* TOWN PAGES */
+
+.hero-div {
+    margin: 0 auto;
+}
+
+.hero-img {
     box-shadow: 0 2.5px 10px 2.5px #00000066;
 }
 
@@ -260,6 +238,8 @@ main section .label {
     grid-template-columns: 1fr;
 }
 
+/* FOOTER */
+
 #preston-map {
     border: 2px solid #2c2a29;
     border-radius: 25px;
@@ -283,15 +263,6 @@ main section .label {
     margin: 0.5rem;
 }
 
-a {
-    color: #098286; 
-    text-decoration: none;
-}
-
-a:hover {
-    font-weight: bold;
-}
-
 footer{
     border-top: 4px solid #098286;
     font-size: 0.85em;
@@ -299,14 +270,73 @@ footer{
     text-align: center;
 }
 
+footer a {
+    color: #8bfbff;
+}
+
 .footer-info {
     padding: 1rem;
 }
 
-#gallery-last-visited {
-    color: #8bfbff;
-    font-weight: bold;
+/* HOME */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
 }
+
+.home-grid .town-container {
+    background-color: #2c2a29;
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    color: ivory;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+}
+
+.home-grid h2 {
+    border-bottom: 1px solid #8bfbff;
+    padding-bottom: 1rem;
+}
+
+.home-grid q {
+    font-size: medium;
+    font-style: italic;
+}
+
+.home-grid a:focus {
+    color: #098286; 
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.home-grid a:hover {
+    color: #8bfbff; 
+}
+
+.home-grid .paragraph-block {
+    background-color: #1a1817;
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    margin: 1rem 0;
+}
+
+.home-grid img {
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    max-width: 100%;
+}
+
+/* PRESTON */
+
+.friday-banner {
+    background-color: #098286;
+    border: 1px solid #8bfbff;
+    color: ivory;
+    font-family: "Barlow", sans-serif;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+/* STORMCENTER */
 
 .form-grid {
     background-color: #2c2a29;
@@ -409,47 +439,35 @@ input:focus {
     color: #8bfbff;
 }
 
-.home-grid {
+/* GALLERY */
+
+.gallery-grid {
     display: grid;
+    font-family: "Barlow", sans-serif;
+    grid-gap: 1rem;
     grid-template-columns: 1fr;
 }
 
-.home-grid .town-container {
-    background-color: #2c2a29;
+.gallery-grid img {
+    filter: none;
+    transition: filter 0.5s;
+}
+    
+.gallery-grid img[data-src] {
+    filter: blur(0.15rem);
+}
+
+.gallery-grid figure {
     box-shadow: 0 2.5px 10px 2.5px #00000066;
-    color: ivory;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-bottom: 1rem;
+    margin: 0 auto;
+    max-width: fit-content;
 }
 
-.home-grid h2 {
-    border-bottom: 1px solid #8bfbff;
-    padding-bottom: 1rem;
+figcaption {
+    padding: 0.75rem 0;
 }
 
-.home-grid q {
-    font-size: medium;
-    font-style: italic;
-}
-
-.home-grid a:focus {
-    color: #098286; 
-    text-decoration: none;
-    background-color: transparent;
-}
-
-.home-grid a:hover {
-    color: #8bfbff; 
-}
-
-.home-grid .paragraph-block {
-    background-color: #1a1817;
-    box-shadow: 0 2.5px 10px 2.5px #00000066;
-    margin: 1rem 0;
-}
-
-.home-grid img {
-    box-shadow: 0 2.5px 10px 2.5px #00000066;
-    max-width: 100%;
+#gallery-last-visited {
+    color: #8bfbff;
+    font-weight: bold;
 }

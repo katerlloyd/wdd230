@@ -1,24 +1,4 @@
-//#region Responsive Navigation Bar
-document.querySelector('.bar-icon').addEventListener('click', () => {
-    document.querySelector('.navigation').classList.toggle('responsive');
-}, false);
-
-window.onresize = () => {
-    if (window.innerWidth > 675) document.querySelector('.navigation').classList.remove('responsive')
-};
-//#endregion 
-
-
-//#region Copyright Year and Current Date
-const date = new Date(Date.now());
-
-const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
-document.querySelector("#home-current-date").textContent = date.toLocaleDateString('en-UK', options);
-
-document.querySelector("#home-copyright-year").textContent = date.getFullYear();
-//#endregion 
-
-//#region API Request
+//#region Town API Request
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL).then(function (response) {return response.json();}).then(function (jsonObject) {
@@ -55,10 +35,10 @@ fetch(requestURL).then(function (response) {return response.json();}).then(funct
 
             a.textContent = towns[i].name;
             q.textContent = towns[i].motto;
-            p1.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            p2.textContent = 'Population: ' + towns[i].currentPopulation;
-            p3.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall;
-            img.setAttribute('src', 'images/' + towns[i].photo);
+            p1.textContent = `Year Founded: ${towns[i].yearFounded}`;
+            p2.textContent = `Population: ${towns[i].currentPopulation}`;
+            p3.textContent = `Annual Rainfall: ${towns[i].averageRainfall}`;
+            img.setAttribute('src', `images/${towns[i].photo}`);
             img.setAttribute('alt', towns[i].name);
 
             h2.appendChild(a);

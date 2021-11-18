@@ -29,6 +29,5 @@ function selectResponse() {
 	const sel = document.querySelector('#storm-region');
 	s.style.display = "block";
 	s.textContent = sel.value;
-	
 }
 //#endregion

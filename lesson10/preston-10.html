@@ -11,7 +11,8 @@
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
         <script defer src="js/preston.js"></script>
-        <script defer src="js/windchill.js"></script>
+        <script defer src="js/prestonweather.js"></script>
+        <script defer src="js/site.js"></script>
     </head>
     <body>
         <header>
@@ -38,7 +39,7 @@
             <h2>Preston, Idaho</h2>
             <div class="hero-div">
                 <picture>
-                    <img src="images/hike.jpg" alt="Hikers walking through flowered hills" id="hike-img">
+                    <img src="images/hike.jpg" alt="Hikers walking through flowered hills" class="hero-img">
                 </picture>
                 <section class="weather-summary">
                     <h3>Weather Summary</h3>
@@ -86,8 +87,9 @@
             </section>
         </main>
         <footer>
-            <p>&#169; <span id="preston-copyright-year"></span> Solaris Weather &#38; Activities</p>
+            <p>&#169; <span id="copyright-year"></span> Solaris Weather &#38; Activities</p>
             <p><span id="current-date"></span></p>
+            <p>Weather data was obtained from <a href="https://openweathermap.org">OpenWeather Mobile App</a>.</p>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>WebFont.load({google: {families: ['Raleway:200&display=swap', 'Barlow&display=swap']}});</script>
