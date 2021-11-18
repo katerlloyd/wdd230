@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Keep your community updated on recent weather events using the Solaris Weather &#38; Activities Storm Center.">
+        <title>Solaris Weather | Storm Center</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script defer src="js/stormcenter.js"></script>
+        <script defer src="js/site.js"></script>
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img class="logo" src="images/logo-white.jpg" alt="Logo of a white cirle with two lines through it">
+            </figure>
+            <section class="headings">
+                <h1>Solaris Weather &#38; Activities</h1>
+                <q class="motto">Community fun during the storms of life.</q>
+            </section>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li class="bar-icon"><a href="#">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston-10.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Storm Center</h2>
+            <form action="thanks.html" method="get" class="form-grid">
+                <div id="user-info">
+                    <h3>Contact Information</h3>
+                    <fieldset>
+                        <label for="full-name">
+                            <input type="text" name="full-name" id="full-name" required pattern="[A-Za-z]{5,}" placeholder="Full Name">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="phone">
+                            <input type="tel" name="phone" id="phone" required placeholder="Phone Number">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">
+                            <input type="email" name="email" id="email" placeholder="johndoe@email.com">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="zip">
+                            <input type="number" name="zip" id="zip" required placeholder="Zip Code">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Are you in danger?</legend>
+                        <div class="radio-selecion">
+                            <label for="user-danger-level-yes">    
+                                <input type="radio" id="user-danger-level-yes" name="danger-level" value="Yes"> 
+                            Yes</label>
+                        </div>
+                        <div class="radio-selecion">
+                            <label for="user-danger-level-maybe"> 
+                                <input type="radio" id="user-danger-level-maybe" name="danger-level" value="Maybe"> 
+                            Maybe</label>
+                        </div>
+                        <div class="radio-selecion">
+                            <label for="user-danger-level-no">
+                                <input type="radio" id="user-danger-level-no" name="danger-level" value="No" checked> 
+                            No</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div id="storm-info">
+                    <h3>Storm Information</h3>
+                    <fieldset>
+                        <label for="storm-date">Storm Date 
+                            <input type="date" name="storm-date" id="storm-date">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="region-list">
+                            <select id="region-list" name="storm-region" onchange="selectResponse()">
+                                <option value="" disabled selected>Select Storm Region</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Soda Springs">Soda Springs</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="storm-type">
+                            <input list="storm-list" name="storm-type" id="storm-type" placeholder="Select Storm Type">
+                        </label>
+                        <datalist id="storm-list">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                    </fieldset>
+                    <fieldset>
+                        <label class="flexly" for="storm-severity">Storm Severity: <span id="value">4</span> &#160;&#160;
+                            <input type="range" name="storm-severity" id="storm-severity" value="4" min="1" max="10" step="1" list="ranges" oninput="toggleRating(this.value)" onchange="toggleRating(this.value)">
+                        </label>
+                        <datalist id="ranges">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                    </fieldset>
+                </div>
+                <div id="additional-info">
+                    <h3>Additional Information</h3>
+                    <fieldset id="full-area">
+                        <label for="comments">Comments 
+                            <textarea name="comments" id="comments" rows="8" tabindex="0"></textarea>
+                        </label>
+                    </fieldset>
+                    <div id="button">
+                        <input type="submit" name="submit" id="submit" value="Report Storm" tabindex="0">
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>&#169; <span id="copyright-year"></span> Solaris Weather &#38; Activities</p>
+            <p><span id="current-date"></span></p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>WebFont.load({google: {families: ['Raleway:200&display=swap', 'Barlow&display=swap']}});</script>
+    </body>
+</html>

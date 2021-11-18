@@ -1,0 +1,473 @@
+/* ALL PAGES */
+
+body {
+    box-sizing: border-box;
+    color: #1a1817;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+header, nav, footer {
+    max-width: 100%;
+}
+
+header {
+    align-items: center;
+    border-bottom: 4px solid #098286;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+header, footer {
+    background-color: #1a1817; 
+    color: ivory;
+}
+
+.logo {
+    height: auto;
+    max-width: 5rem;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 2rem;
+    margin: 0 0 0 1rem;
+}
+
+.motto {
+    font-family: "Barlow", sans-serif;
+    margin-left: 1rem;
+}
+
+nav {
+    background-color: #2c2a29;
+    border-bottom: 4px solid #098286;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: ivory;
+}
+
+.navigation {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+	margin: 0;
+    overflow: hidden;
+	padding: 0;	
+    text-align: center;
+}
+
+.navigation a {
+    color: ivory;
+    display: block;
+    padding: 0.75rem;
+    transition: 0.25s;
+}
+
+.navigation .active a {
+    background-color: ivory;
+    color: #098286;
+}
+
+.navigation a:hover, .navigation a:focus {
+    background-color: ivory;
+    color: #2c2a29;
+    outline: none;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+    margin: auto;
+}
+
+.responsive li {
+	display: block;
+}
+
+.responsive .bar-icon {
+    border-bottom: 4px solid #098286;
+    color: ivory;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+    row-gap: 1rem;
+    text-align: center;
+}
+
+main a:focus {
+    background-color: #098286;
+    outline: none;
+}
+
+main section {
+    font-family: "Barlow", sans-serif;
+    margin: 1rem;
+    margin: 0 auto;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+}
+
+main h2, main h3 {
+    color: #098286;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-family: "Barlow", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #098286; 
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/* TOWN PAGES */
+
+.hero-div {
+    margin: 0 auto;
+}
+
+.hero-img {
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+}
+
+.weather-summary {
+    background-color: white;
+    font-size: 1.5rem;
+    max-width: fit-content;
+    text-align: left;
+}
+
+.weather-summary .currently::first-letter {
+    text-transform: capitalize;
+}
+
+.weather-summary h3 {
+    border-bottom: 1px solid #098286;
+    margin-top: 10px;
+}
+
+.weather-summary-grid {
+    column-gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main section .label {
+    font-weight: bold;
+    text-align: right;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: "Barlow", sans-serif;
+}
+
+.flex img {
+    padding: 0.25rem;
+}
+
+.flex-col {
+    border: 2px solid white;
+    color: ivory;
+    flex: 1 1 auto;
+}
+
+.weather-info {
+    background-color: #2c2a29;
+}
+
+.flex-col:hover {
+    background-color: #2c2a29;
+    opacity: 0.75;
+}
+
+.col-head {
+    background-color: #098286;
+    border-bottom: 3px solid white;
+    color: ivory;
+    display: block;
+    font-weight: bold;
+    padding: 0.25rem;
+}
+
+.data {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.article {
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+}
+
+.article p {
+    text-align: left;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* FOOTER */
+
+#preston-map {
+    border: 2px solid #2c2a29;
+    border-radius: 25px;
+}
+
+#preston-map:hover {
+    border: 2px solid #098286;
+}
+
+.contact-info {
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.contact-info h3 {
+    text-align: left;
+}
+
+.social-media img {
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+footer{
+    border-top: 4px solid #098286;
+    font-size: 0.85em;
+    padding: 0.1rem 0.1rem;
+    text-align: center;
+}
+
+footer a {
+    color: #8bfbff;
+}
+
+.footer-info {
+    padding: 1rem;
+}
+
+/* HOME */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.home-grid .town-container {
+    background-color: #2c2a29;
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    color: ivory;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+}
+
+.home-grid h2 {
+    border-bottom: 1px solid #8bfbff;
+    padding-bottom: 1rem;
+}
+
+.home-grid q {
+    font-size: medium;
+    font-style: italic;
+}
+
+.home-grid a:focus {
+    color: #098286; 
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.home-grid a:hover {
+    color: #8bfbff; 
+}
+
+.home-grid .paragraph-block {
+    background-color: #1a1817;
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    margin: 1rem 0;
+}
+
+.home-grid img {
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    max-width: 100%;
+}
+
+/* PRESTON */
+
+.friday-banner {
+    background-color: #098286;
+    border: 1px solid #8bfbff;
+    color: ivory;
+    font-family: "Barlow", sans-serif;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+/* STORMCENTER */
+
+.form-grid {
+    background-color: #2c2a29;
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    color: ivory;
+    display: grid;
+    font-family: "Barlow", sans-serif;
+    grid-gap: 0.75rem;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    text-align: left;
+}
+
+input, select {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #8bfbff;
+    color: #969590;
+    cursor: pointer;
+    outline: none;
+    padding: 0.5rem;
+}
+
+#region-list option {
+    color: #1a1817;
+}
+
+#region-list option:first-of-type {
+    color: #969590;
+}
+
+#storm-severity {
+    color: ivory;
+}
+
+#button {
+    text-align: center;
+}
+
+#button input {
+    background-color: #098286;
+    border: 1px solid #8bfbff;
+    color: ivory;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+#button input:focus {
+    background-color: #1a1817;
+}
+
+::placeholder {
+    color: ivory;
+    opacity: 50%;
+}
+
+fieldset {
+    border: none;
+    margin: 0.5rem 0;
+}
+
+textarea {
+    margin-top: 0.25rem;
+    width: 100%;
+}
+
+#value {
+    color: #8bfbff;
+}
+
+#storm-severity {
+    border: none;
+    display: block;
+}
+
+.form-grid h3 {
+    color: ivory;
+    text-align: left;
+}
+
+input[type='radio'] {
+    margin-right: 0.5rem;
+    transform: scale(1.5);
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type='range'] { 
+    margin-left: 2rem;
+    transform: scale(1.5);
+}
+
+input:focus {
+    color: #8bfbff;
+}
+
+#region-list:focus {
+    color: #8bfbff;
+}
+
+/* GALLERY */
+
+.gallery-grid {
+    display: grid;
+    font-family: "Barlow", sans-serif;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.gallery-grid img {
+    filter: none;
+    transition: filter 0.5s;
+}
+    
+.gallery-grid img[data-src] {
+    filter: blur(0.15rem);
+}
+
+.gallery-grid figure {
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    margin: 0 auto;
+    max-width: fit-content;
+}
+
+figcaption {
+    padding: 0.75rem 0;
+}
+
+#gallery-last-visited {
+    color: #8bfbff;
+    font-weight: bold;
+}
