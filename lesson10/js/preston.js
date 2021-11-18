@@ -60,7 +60,7 @@ fetch(apiURL2).then((response) => response.json()).then((jsonObject) => {
 
             let data_span = document.createElement('span');
             data_span.classList.add('data');
-            data_span.textContent = Math.round(forecast[i].main.temp) + '\&#176;F';
+            data_span.innerHTML = Math.round(forecast[i].main.temp) + '&#176;F';
             weather_info_div.appendChild(data_span);            
     
             document.querySelector('div.flex').appendChild(flexcol);

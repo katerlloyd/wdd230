@@ -188,6 +188,10 @@ img {
     text-align: left;
 }
 
+.weather-summary .currently::first-letter {
+    text-transform: capitalize;
+}
+
 .weather-summary h3 {
     border-bottom: 1px solid #098286;
     margin-top: 10px;

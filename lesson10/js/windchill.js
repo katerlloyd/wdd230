@@ -21,8 +21,8 @@ fetch(apiURL).then((response) => response.json()).then((jsonObject) => {
     let windchill_factor = 'N/A';
 
     if ((t <= 50) && (w > 3)) {
-        windchill_factor = Math.round(35.74 + (0.6215 * t) - (35.75 * Math.pow(w, 0.16)) + ((0.4275 * t) * Math.pow(w, 0.16))) + '\&#176;F';
+        windchill_factor = Math.round(35.74 + (0.6215 * t) - (35.75 * Math.pow(w, 0.16)) + ((0.4275 * t) * Math.pow(w, 0.16))) + '&#176;F';
     } 
     
-    document.querySelector('.windchill').textContent = windchill_factor;
+    document.querySelector('.windchill').innerHTML = windchill_factor;
   });
