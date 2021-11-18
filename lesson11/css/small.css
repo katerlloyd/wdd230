@@ -397,6 +397,10 @@ input, select {
     padding: 0.5rem;
 }
 
+#storm-info input, #user-info input {
+    display: block;
+}
+
 #region-list option {
     color: #1a1817;
 }
@@ -457,6 +461,10 @@ textarea {
 input[type='radio'] {
     margin-right: 0.5rem;
     transform: scale(1.5);
+}
+
+#danger-radio input {
+    display: inline-block;
 }
 
 label {
