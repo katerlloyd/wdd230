@@ -25,9 +25,9 @@ function toggleRating(rating) {
 
 //#region Region Response
 function selectResponse() {
-	const s = document.querySelector('#selected');
-	const sel = document.querySelector('#storm-region');
-	s.style.display = "block";
-	s.textContent = sel.value;
+	const selected = document.querySelector('#selected');
+	const region = document.querySelector('#storm-region');
+	selected.style.display = "block";
+	selected.textContent = region.value;
 }
 //#endregion
