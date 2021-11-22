@@ -58,6 +58,10 @@
 		box-shadow: 0 2.5px 10px 2.5px #00000066;
 	}
 
+	.event-grid, .fh-event-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+	
 	.article img {
 		float: right;
 		margin: 0.75rem;

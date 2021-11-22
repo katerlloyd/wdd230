@@ -211,11 +211,11 @@ main section .label {
 }
 
 .weather-info {
-    background-color: #2c2a29;
+    background-color: #1a1817;
 }
 
 .flex-col:hover {
-    background-color: #2c2a29;
+    background-color: #1a1817;
     opacity: 0.75;
 }
 
@@ -224,13 +224,45 @@ main section .label {
     border-bottom: 3px solid white;
     color: ivory;
     display: block;
-    font-weight: bold;
+    letter-spacing: 0.25rem;
     padding: 0.25rem;
 }
 
 .data {
     display: block;
     padding-bottom: 0.5rem;
+}
+
+.event-grid, .fh-event-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+}
+
+.event-grid, .fh-event-grid {
+    color: ivory;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.event-grid h3, .fh-event-grid h3 {
+    border-bottom: 1px solid #8bfbff;
+    color: ivory;
+    letter-spacing: 0.25rem;
+    padding-bottom: 1rem;
+}
+
+.event-grid section, .fh-event-grid section {
+    background-color: #2c2a29;
+    color: ivory;
+}
+
+.event-grid .town-event, .fh-event-grid .town-event {
+    background-color: #2c2a29;
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    color: ivory;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
 }
 
 .article {

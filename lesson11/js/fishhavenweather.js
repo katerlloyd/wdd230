@@ -28,7 +28,7 @@ fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
 //#endregion
 
 //#region Fish Haven Weather Forecast API
-const forecastapiURL = 'https://api.openweathermap.org/data/2.5/forecast?units=imperial&appid=c3affef608fbd43350f108a8f72cddac&q=fish%20haven';
+const forecastapiURL = 'https://api.openweathermap.org/data/2.5/forecast?units=imperial&appid=c3affef608fbd43350f108a8f72cddac&id=5585010';
 
 fetch(forecastapiURL).then((response) => response.json()).then((jsonObject) => {
     
@@ -47,7 +47,7 @@ fetch(forecastapiURL).then((response) => response.json()).then((jsonObject) => {
 
             let col_head_span = document.createElement('span');
             col_head_span.classList.add('col-head');
-            col_head_span.textContent = forecastdate.toLocaleString("default", {weekday: "long"});
+            col_head_span.textContent = forecastdate.toLocaleString("default", {weekday: "short"});
             flexcol.appendChild(col_head_span);
 
             let weather_info_div = document.createElement('div');

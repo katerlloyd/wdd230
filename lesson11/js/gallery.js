@@ -32,22 +32,27 @@ if('IntersectionObserver' in window) {
 //#endregion 
 
 //#region Local Storage
-const daysSinceLastVisit = document.querySelector('#gallery-last-visited');
+const gallerydate = Date.now();
 
 function setDateLastVisited() {
-    localStorage.setItem('dateLastVisited', date);
+    localStorage.setItem('dateLastVisited', gallerydate);
 }
 
-function getDateLastVisited(daysSinceLastVisit) {
+function getDateLastVisited() {
+    const daysSinceLastVisit = document.querySelector('#gallery-last-visited');
     try {
         const milisecondsToDays = 8640000;
-        const lastVisit = localStorage.getItem('dateLastVisisted') || date;
-        const days = Math.round((date - lastVisit) / milisecondsToDays);
-
-        if (days > 0) {
-            daysSinceLastVisit.textContent = days;
+        const lastVisit = localStorage.getItem('dateLastVisited');
+        
+        if (lastVisit === null) {
+            daysSinceLastVisit.textContent = "Welcome!";
         } else {
-            daysSinceLastVisit.textContent = 0;
+            const days = Math.round((gallerydate - lastVisit) / milisecondsToDays);
+            if (days > 0) {
+                daysSinceLastVisit.textContent = days;
+            } else {
+                daysSinceLastVisit.textContent = 0;
+            }
         }
     }
     catch (er) {
@@ -55,6 +60,6 @@ function getDateLastVisited(daysSinceLastVisit) {
     }
 }
 
-getDateLastVisited(daysSinceLastVisit)
+getDateLastVisited()
 setDateLastVisited()
 //#endregion 

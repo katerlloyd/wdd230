@@ -22,10 +22,19 @@
 		font-size: 1.6rem;
 	}
 
+	/* TOWN PAGES */
+
+	.event-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+	.fh-event-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
 	/* HOME */
 
 	.home-grid {
-		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 1rem;
 	}
@@ -36,12 +45,12 @@
 	}
 
 	.home-grid .town-container:nth-child(even) .town-img {
-		grid-column: none;
-		grid-row: none;
+		grid-column: initial;
+		grid-row: initial;
 	}
 	
 	.home-grid .town-container:nth-child(even) .town-data {
-		grid-column: none;
+		grid-column: initial;
 	}
 
 	/* STORMCENTER */

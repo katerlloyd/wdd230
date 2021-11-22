@@ -9,7 +9,7 @@ window.onresize = () => {
 //#endregion
 
 //#region Copyright Year and Current Date
-const date = new Date(Date.now());
+const date = new Date();
 
 const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
 document.querySelector("#current-date").textContent = date.toLocaleDateString('en-UK', options);

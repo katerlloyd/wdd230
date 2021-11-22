@@ -47,7 +47,7 @@ fetch(forecastapiURL).then((response) => response.json()).then((jsonObject) => {
 
             let col_head_span = document.createElement('span');
             col_head_span.classList.add('col-head');
-            col_head_span.textContent = forecastdate.toLocaleString("default", {weekday: "long"});
+            col_head_span.textContent = forecastdate.toLocaleString("default", {weekday: "short"});
             flexcol.appendChild(col_head_span);
 
             let weather_info_div = document.createElement('div');

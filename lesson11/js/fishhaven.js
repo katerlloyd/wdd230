@@ -1,28 +1,10 @@
-//#region Friday Banner
-const currentdate = new Date(Date.now());
-
-if (currentdate.getDay() === 5) {
-    let banner = document.createElement('div');
-    banner.classList.add('friday-banner');
-    banner.textContent = '🥞 Saturday | Preston Pancakes in the Park! 9:00 AM Saturday at the city park pavilion.';
-
-    const main = document.querySelector('body');
-    main.prepend(banner);
-} else {
-    bannerClass = document.querySelector('friday-banner');
-    if (bannerClass != null) {
-        banner.remove('friday-banner');
-    }
-}
-//#endregion
-
 //#region Town Events API Request
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL).then(function (response) {return response.json();}).then(function (jsonObject) {
     const towns = jsonObject['towns'];
     for (let i = 0; i < towns.length; i++ ) {
-        if (towns[i].name === "Preston") {
+        if (towns[i].name === "Fish Haven") {
             const event = towns[i].events
             for (let j = 0; j < event.length; j++ ) {
                 let towncontainer = document.createElement('div');
@@ -40,7 +22,7 @@ fetch(requestURL).then(function (response) {return response.json();}).then(funct
                 town.appendChild(img);
                 towncontainer.appendChild(town);
 
-                document.querySelector('div.event-grid').appendChild(towncontainer);
+                document.querySelector('div.fh-event-grid').appendChild(towncontainer);
             }
         }
     }

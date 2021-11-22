@@ -1,8 +1,7 @@
-//#region Town API Request
+//#region Town Info API Request
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL).then(function (response) {return response.json();}).then(function (jsonObject) {
-    console.table(jsonObject);
     const towns = jsonObject['towns'];
     for (let i = 0; i < towns.length; i++ ) {
         if (towns[i].name === "Preston" || towns[i].name === "Fish Haven" || towns[i].name === "Soda Springs") {
@@ -24,13 +23,13 @@ fetch(requestURL).then(function (response) {return response.json();}).then(funct
             let img = document.createElement('img');
 
             if (towns[i].name === "Preston") {
-                a.setAttribute('href', "preston-9.html");
+                a.setAttribute('href', "preston.html");
             } else if (towns[i].name === "Fish Haven") {
-                a.setAttribute('href', "#");
+                a.setAttribute('href', "fishhaven.html");
             } else if (towns[i].name === "Soda Springs") {
-                a.setAttribute('href', "#");
+                a.setAttribute('href', "sodasprings.html");
             } else {
-                a.setAttribute('href', "#");
+                a.setAttribute('href', "index.html");
             }
 
             a.textContent = towns[i].name;
