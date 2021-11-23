@@ -327,8 +327,7 @@ footer a {
 /* HOME */
 
 .welcome {
-    background-color: #1a1817;
-    color: ivory;
+    padding: 2rem;
     position: relative;
 }
 
@@ -343,6 +342,7 @@ footer a {
     color: ivory;
     font-size: 3rem;
     font-weight: bold;
+    text-shadow: 1px 1px 5px #1a1817;
 }
 
 .home-grid {
