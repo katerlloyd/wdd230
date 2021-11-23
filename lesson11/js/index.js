@@ -39,6 +39,7 @@ fetch(requestURL).then(function (response) {return response.json();}).then(funct
             p3.textContent = `Annual Rainfall: ${towns[i].averageRainfall}`;
             img.setAttribute('src', `images/${towns[i].photo}`);
             img.setAttribute('alt', towns[i].name);
+            img.setAttribute('loading', 'lazy');
 
             h2.appendChild(a);
             town.appendChild(h2);

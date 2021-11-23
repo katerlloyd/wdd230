@@ -17,6 +17,7 @@ fetch(requestURL).then(function (response) {return response.json();}).then(funct
                 h3.textContent = event[j];
                 img.setAttribute('src', `images/${j}${towns[i].photo}`);
                 img.setAttribute('alt', `${towns[i].name} ${event[j]} Event`);
+                img.setAttribute('loading', 'lazy');
 
                 town.appendChild(h3);
                 town.appendChild(img);
