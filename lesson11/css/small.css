@@ -327,6 +327,8 @@ footer a {
 /* HOME */
 
 .welcome {
+    background-color: #1a1817;
+    color: ivory;
     position: relative;
 }
 
