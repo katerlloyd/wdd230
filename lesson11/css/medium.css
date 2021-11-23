@@ -42,7 +42,8 @@
 	/* TOWN PAGES */
 
 	.hero-div {
-		position: relative;    
+		position: relative;  
+		margin-bottom: 2rem;  
 	}
 
 	.hero-img {

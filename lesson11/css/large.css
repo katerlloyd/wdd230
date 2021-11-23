@@ -24,6 +24,10 @@
 
 	/* TOWN PAGES */
 
+	.hero-div {
+		margin-bottom: 0;
+	}
+
 	.event-grid {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
