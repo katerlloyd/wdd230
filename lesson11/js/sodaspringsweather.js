@@ -55,7 +55,7 @@ fetch(forecastapiURL).then((response) => response.json()).then((jsonObject) => {
             flexcol.appendChild(weather_info_div);
 
             let img = document.createElement('img');
-            img.setAttribute("src", `http://openweathermap.org/img/wn/${forecast[i].weather["0"].icon}@2x.png`);
+            img.setAttribute("src", `images/${forecast[i].weather["0"].icon}.png`);
             img.setAttribute("alt", `Icon depicting ${forecast[i].weather["0"].description} in ${jsonObject.city.name}, Idaho`);
             img.setAttribute('loading', 'lazy');
             weather_info_div.appendChild(img);
