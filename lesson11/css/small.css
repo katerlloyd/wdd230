@@ -326,25 +326,6 @@ footer a {
 
 /* HOME */
 
-.welcome {
-    padding: 2rem;
-    position: relative;
-}
-
-.welcome-text {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.welcome-text h2 {
-    color: ivory;
-    font-size: 3rem;
-    font-weight: bold;
-    text-shadow: 1px 1px 5px #1a1817;
-}
-
 .home-grid {
     display: grid;
     grid-template-columns: 1fr;

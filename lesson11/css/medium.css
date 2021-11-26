@@ -78,10 +78,6 @@
 
 	/* HOME */
 
-	.welcome-text h2 {
-		font-size: 5rem;
-	}
-
 	.home-grid .town-container {
 		grid-template-columns: 1fr 1fr;
 		margin-bottom: 1rem;
