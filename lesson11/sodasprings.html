@@ -7,15 +7,15 @@
         <title>Solaris Weather | Soda Springs</title>
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="css/small.css">
-        <link rel="stylesheet" href="css/medium.css">
-        <link rel="stylesheet" href="css/large.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family-Barlow&display=swap">
-        <script defer src="js/site.js"></script>
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
         <script defer src="js/sodasprings.js"></script>
         <script defer src="js/sodaspringsweather.js"></script>
+        <script defer src="js/site.js"></script>
     </head>
     <body>
         <header>
@@ -42,10 +42,11 @@
             <h2>Soda Springs, Idaho</h2>
             <div class="hero-div">
                 <picture>
-                    <source srcset="images/hero-sunvalley700.jpg" media="(min-width: 700px) and (max-width: 899px)">
-                    <source srcset="images/hero-sunvalley900.jpg" media="(min-width: 900px) and (max-width: 1349px)">
-                    <source srcset="images/hero-sunvalley1350.jpg" media="(min-width: 1350px)">
-                    <img src="images/hero-sunvalley400.jpg" alt="Sun coming up over hills" class="hero-img" loading="lazy">
+                    <source srcset="images/hero-sunvalley400.jpg" media="(max-width: 399px)">
+                    <source srcset="images/hero-sunvalley700.jpg" media="(max-width: 699px)">
+                    <source srcset="images/hero-sunvalley900.jpg" media="(max-width: 899px)">
+                    <source srcset="images/hero-sunvalley1350.jpg" media="(min-width: 900px)">
+                    <img src="images/placeholder1350x400.jpg" data-src="images/hero-sunvalley1350.jpg" alt="Sun coming up over hills" class="hero-img">
                 </picture>
                 <section class="weather-summary">
                     <h3>Weather Summary</h3>

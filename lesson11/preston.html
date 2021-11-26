@@ -13,9 +13,9 @@
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
-        <script defer src="js/site.js"></script>
         <script defer src="js/preston.js"></script>
         <script defer src="js/prestonweather.js"></script>
+        <script defer src="js/site.js"></script>
     </head>
     <body>
         <header>
@@ -42,10 +42,11 @@
             <h2>Preston, Idaho</h2>
             <div class="hero-div">
                 <picture>
-                    <source srcset="images/hero-hike700.jpg" media="(min-width: 700px) and (max-width: 899px)">
-                    <source srcset="images/hero-hike900.jpg" media="(min-width: 900px) and (max-width: 1349px)">
-                    <source srcset="images/hero-hike1350.jpg" media="(min-width: 1350px)">
-                    <img src="images/placeholder1350x400.jpg" data-src="images/hero-hike400.jpg" alt="Hikers walking through flowered hills" class="hero-img">
+                    <source srcset="images/hero-hike400.jpg" media="(max-width: 399px)">
+                    <source srcset="images/hero-hike700.jpg" media="(max-width: 699px)">
+                    <source srcset="images/hero-hike900.jpg" media="(max-width: 899px)">
+                    <source srcset="images/hero-hike1350.jpg" media="(min-width: 900px)">
+                    <img src="images/placeholder1350x400.jpg" data-src="images/hero-hike1350.jpg" alt="Hikers walking through flowered hills" class="hero-img">
                 </picture>
                 <section class="weather-summary">
                     <h3>Weather Summary</h3>
