@@ -62,6 +62,14 @@
 	.event-grid, .fh-event-grid {
 		grid-template-columns: 1fr 1fr;
 	}
+
+	.event-grid {
+		min-height: 875px;
+	}
+
+	.fh-event-grid {
+		min-height: 825px;
+	}
 	
 	.article img {
 		float: right;

@@ -244,6 +244,14 @@ main section .label {
     grid-gap: 1rem;
 }
 
+.event-grid {
+    min-height: 1500px;
+}
+
+.fh-event-grid {
+    min-height: 1575px;
+}
+
 .event-grid h3, .fh-event-grid h3 {
     border-bottom: 1px solid #8bfbff;
     color: ivory;
