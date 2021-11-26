@@ -329,6 +329,7 @@ footer a {
 .home-grid {
     display: grid;
     grid-template-columns: 1fr;
+    min-height: 2150px;
 }
 
 .home-grid .town-container {

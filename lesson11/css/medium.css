@@ -78,6 +78,10 @@
 
 	/* HOME */
 
+	.home-grid {
+		min-height: 1000px;
+	}
+
 	.home-grid .town-container {
 		grid-template-columns: 1fr 1fr;
 		margin-bottom: 1rem;

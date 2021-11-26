@@ -37,8 +37,7 @@ fetch(requestURL).then(function (response) {return response.json();}).then(funct
             p1.textContent = `Year Founded: ${towns[i].yearFounded}`;
             p2.textContent = `Population: ${towns[i].currentPopulation}`;
             p3.textContent = `Annual Rainfall: ${towns[i].averageRainfall}`;
-            img.setAttribute('src', 'images/placeholder350.jpg');
-            img.setAttribute('data-src', `images/${towns[i].photo}`);
+            img.setAttribute('src', `images/${towns[i].photo}`);
             img.setAttribute('alt', towns[i].name);
             img.setAttribute('loading', 'lazy');
 
