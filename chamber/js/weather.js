@@ -1,4 +1,4 @@
-//#region Weather and Forecast API
+//#region Weather API
 const weatherapiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=43.6228&lon=-116.3092&units=imperial&appid=c3affef608fbd43350f108a8f72cddac';
 
 fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
@@ -12,6 +12,7 @@ fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
     const humidity = document.querySelector('.humidity');
     humidity.textContent = jsonObject.current.humidity;
 
+    //#region Forecast
     for (let i = 0; i < 3; i++) {
         
         let forecastdate = new Date(jsonObject.daily[i].dt * 1000);
@@ -41,22 +42,36 @@ fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
 
         document.querySelector('div.flex').appendChild(flexcol);
     }
+    //#endregion
 
+    //#region Weather Alerts
     for (let i = 0; i < jsonObject.alerts.length; i++) {
 
         if (jsonObject.alerts) {
             let banner = document.createElement('div');
             banner.classList.add('weather-alert');
+
+            let button = document.createElement('button');
+            button.setAttribute('type', 'button');
+            button.innerHTML = "&#10799;";
+            button.classList.add('close-button');
+            button.addEventListener("click", () => {
+                banner.remove('weather-alert');
+            })
+
             let title = document.createElement('h2');
             title.textContent = jsonObject.alerts[i].event;
+
             let description = document.createElement('p');
             description.textContent = jsonObject.alerts[i].description;
 
+            banner.appendChild(button);
             banner.appendChild(title);
             banner.appendChild(description);
         
             const body = document.querySelector('body');
             body.prepend(banner);
+
         } else {
             bannerClass = document.querySelector('weather-alert');
             if (bannerClass != null) {
@@ -64,5 +79,6 @@ fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
             }
         }
     }
+    //#endregion
   });
   //#endregion
