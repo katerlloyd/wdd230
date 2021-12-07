@@ -20,4 +20,10 @@
     .goal-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    /* FOOTER */
+
+    .info-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
