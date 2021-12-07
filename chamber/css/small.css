@@ -93,7 +93,7 @@ nav a:hover {
 }
 
 main {
-    padding: 0 6rem;
+    padding: 0 1rem;
     text-align: center;
 }
 
@@ -114,12 +114,12 @@ img {
 }
 
 a {
-    color: #000000; 
+    color: #b42d12; 
     text-decoration: none;
 }
 
 a:hover {
-    color:#b42d12;
+    color:#000000;
 }
 
 /* HOME */
@@ -222,7 +222,7 @@ a:hover {
 
 .weather-grid div {
     background-color: #f7ddd7;
-    padding: 1.5rem;
+    padding: 0.5rem;
 }
 
 .weather-grid p {
@@ -271,12 +271,69 @@ div.weather-condition::first-letter {
     border-bottom: 3px solid #b42d12;
     color: #b42d12;
     display: block;
-    padding: 0.5rem;
+    padding: 0.75rem;
 }
 
 .data {
     display: block;
     padding-bottom: 0.5rem;
+}
+
+/* JOIN */
+
+.join h3 {
+    color: #b42d12;
+}
+
+.membership-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.membership-grid h3 {
+    font-family: "Open Sans", sans-serif;
+}
+
+.membership-grid ul {
+    list-style: none;
+  }
+
+.membership-grid ul li {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    text-align: left;
+}
+
+.membership-grid ul li::before {
+    color: #b42d12;
+    content: "\2022";
+    display: inline-block;
+    font-weight: bold; 
+    margin-left: -1rem;
+    width: 1rem;
+}
+
+.level {
+    background-color: #f7ddd7;
+    padding: 0.5rem;
+}
+
+/* ATTRIBUTIONS */
+
+.attributions {
+    text-align: left;
+}
+
+/* THANKS */
+
+.thanks {
+    background-color: #f7ddd7;
+    border: 2px dotted #b42d12;
+    border-radius: 1rem;
+    margin: 0 auto;
+    max-width: fit-content;
+    padding: 1rem 2rem;
 }
 
 /* FOOTER */

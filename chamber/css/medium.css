@@ -2,10 +2,6 @@
 	
 	/* ALL PAGES */
 
-	/* nav {
-		font-size: 0.8rem;
-	} */
-
     .navigation {
 		display: flex;
 	}
@@ -39,6 +35,12 @@
 
     .weather-container-grid {
         grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* JOIN */
+
+    .membership-grid {
         grid-template-columns: 1fr 1fr;
     }
 

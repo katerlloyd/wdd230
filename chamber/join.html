@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Become a member of the Boise Idaho Chamber of Commerce to receive benefits and more.">
+        <title>Join | Boise Idaho Chamber of Commerce</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com" media="screen">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin media="screen">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" media="screen">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <script defer src="js/site.js"></script>
+    </head>
+    <body>
+        <header>
+            <picture>
+                <!-- ADD LOGO IMAGE -->
+            </picture>
+            <section class="headings">
+                <h1>Boise Idaho Chamber of Commerce</h1>
+            </section>
+        </header>
+        <nav>
+            <ul class="navigation">
+                <li class="bar-icon"><a href="#">&#9776;</a></li>
+                <li><a href="./">Home</a></li>  
+                <li><a href="boise.html">Boise</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main class="join">
+            <h2>Membership Levels</h2>
+            <div class="membership-grid">
+                <section class="level">
+                    <h3>Non-Profit ($100)</h3>
+                    <ul>
+                        <li>Support for small businesses</li>
+                        <li>Free networking and social events each month</li>
+                        <li>Listing in the membership directory</li>
+                        <li>Marketing and sponsorship opportunities</li>
+                        <li>Advocacy and business development opportunities</li>
+                    </ul>
+                </section>
+                <section class="level">
+                    <h3>Bronze ($200)</h3>
+                    <ul>
+                        <li>Exclusive registration pricing to annual and seasonal events</li>
+                        <li>Communication and updates on events, programs, and services</li>
+                        <li>Business and customer referrals</li>
+                        <li>Publicity and marketing opportunities</li>
+                    </ul>
+                </section>
+                <section class="level">
+                    <h3>Silver ($400)</h3>
+                    <ul>
+                        <li>Free quarterly business education trainings and workshops</li>
+                        <li>Membership plaques for your place of business</li>
+                        <li>A vote in the Chamber Committee</li>
+                        <li>Discount if you refer a friend</li>
+                    </ul>
+                </section>
+                <section class="level">
+                    <h3>Gold ($1000)</h3>
+                    <ul>
+                        <li>A seat on the Chamber Council</li>
+                        <li>Tickets to a luncheon with the Chamber President</li>
+                        <li>Nationally recognized leadership development and young professionals programs</li>
+                    </ul>
+                </section>
+            </div>
+                <!-- first name - required
+                last name - required
+                title
+                email - required
+                cell phone
+                business name - required
+                business address
+                business website
+                business description
+                membership level selection that displays the annual fees (only one option is allowed)
+                There are four options: Non-profit ($100), Bronze ($200), Silver ($400), Gold ($1000). -->
+            <section class="form">
+                <h2>Become A Member</h2>
+                <form>
+                    <div id="user-info">
+                        <!-- <h3>Contact Information</h3> -->
+                        <fieldset>
+                            <label for="first-name">First Name
+                                <input type="text" name="first-name" id="first-name" required pattern="^((?:\s*[A-Za-z]\s*){2,})$" placeholder="John">
+                            </label>
+                            <label for="last-name">Last Name
+                                <input type="text" name="Last-name" id="last-name" required pattern="^((?:\s*[A-Za-z]\s*){2,})$" placeholder="Doe">
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="phone">Phone Number
+                                <input type="tel" name="phone" id="phone" required placeholder="(___) ___-____">
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="email"> Email
+                                <input type="email" name="email" id="email" placeholder="johndoe@email.com">
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="zip">Zip Code
+                                <input type="number" name="zip" id="zip" required placeholder="12345">
+                            </label>
+                        </fieldset>
+                        <fieldset id="danger-radio">
+                            <legend>Are you in danger?</legend>
+                            <div class="radio-selecion">
+                                <label for="user-danger-level-yes">    
+                                    <input type="radio" id="user-danger-level-yes" name="danger-level" value="Yes"> 
+                                Yes</label>
+                            </div>
+                            <div class="radio-selecion">
+                                <label for="user-danger-level-maybe"> 
+                                    <input type="radio" id="user-danger-level-maybe" name="danger-level" value="Maybe"> 
+                                Maybe</label>
+                            </div>
+                            <div class="radio-selecion">
+                                <label for="user-danger-level-no">
+                                    <input type="radio" id="user-danger-level-no" name="danger-level" value="No" checked> 
+                                No</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div id="storm-info">
+                        <!-- <h3>Storm Information</h3> -->
+                        <fieldset>
+                            <label for="storm-date">Storm Date 
+                                <input type="date" name="storm-date" id="storm-date">
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="region-list">
+                                <select id="region-list" name="storm-region" onchange="selectResponse()">
+                                    <option value="" disabled selected>Select Storm Region</option>
+                                    <option value="Preston">Preston</option>
+                                    <option value="Soda Springs">Soda Springs</option>
+                                    <option value="Fish Haven">Fish Haven</option>
+                                </select>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="storm-type">Storm Type
+                                <input list="storm-list" name="storm-type" id="storm-type" placeholder="Select Storm Type">
+                            </label>
+                            <datalist id="storm-list">
+                                <option value="Flash Flood">
+                                <option value="Hail">
+                                <option value="Hurricane">
+                                <option value="Thunderstorm">
+                                <option value="Tornado">
+                            </datalist>
+                        </fieldset>
+                        <fieldset>
+                            <label class="flexly" for="storm-severity">Storm Severity: <span id="value">4</span> &#160;&#160;
+                                <input type="range" name="storm-severity" id="storm-severity" value="4" min="1" max="10" step="1" list="ranges" oninput="toggleRating(this.value)" onchange="toggleRating(this.value)">
+                            </label>
+                            <datalist id="ranges">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                                <option value="6">
+                                <option value="7">
+                                <option value="8">
+                                <option value="9">
+                                <option value="10">
+                            </datalist>
+                        </fieldset>
+                    </div>
+                    <div id="additional-info">
+                        <!-- <h3>Additional Information</h3> -->
+                        <fieldset id="full-area">
+                            <label for="comments">Comments 
+                                <textarea name="comments" id="comments" rows="8" tabindex="0"></textarea>
+                            </label>
+                        </fieldset>
+                        <div id="button">
+                            <input type="submit" name="submit" id="submit" value="Report Storm" tabindex="0">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="info-grid">
+                <section class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>🗺 1952 N Hampton Rd Boise, ID 83704</p>
+                    <p>&nbsp;☎ &nbsp;(123) 456-7890</p>
+                    <p>&nbsp;✉ &nbsp;bidchamber@chamber.com</p>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="LinkedIn icon" loading="lazy"></a>
+                        <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook icon" loading="lazy"></a>
+                        <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram icon" loading="lazy"></a>
+                    </div>
+                </section>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.2208854205674!2d-116.31143538463456!3d43.622761379122316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54ae55d0bdf40331%3A0x195dc00b58479d5d!2s1952%20N%20Hampton%20Rd%2C%20Boise%2C%20ID%2083704!5e0!3m2!1sen!2sus!4v1638475572840!5m2!1sen!2sus" allowfullscreen height="100%" width="100%" loading="lazy" title="Map of North Hampton Road in Boise, Idaho"></iframe>
+            <img id="footer-img" src="images/325x325.png" alt="placeholder">
+            </div>
+            <p>&#169; <span id="copyright-year"></span> Boise Idaho Chamber of Commerce | <a href="attributions.html">Attributions</a></p>
+            <p>Last Modified: <span id="last-modified-date"></span></p>
+        </footer>
+    </body>
+</html>

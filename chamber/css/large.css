@@ -2,8 +2,8 @@
 
     /* ALL PAGES */
 
-    nav {
-        padding: 0 6rem;
+    nav, main {
+        padding: 0 7rem;
     }
 
     /* HOME */
@@ -19,6 +19,16 @@
     
     .goal-grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .weather-grid div {
+        padding: 1.5rem;
+    }
+
+    /* JOIN */
+
+    .membership-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     /* FOOTER */
