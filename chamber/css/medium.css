@@ -44,6 +44,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .join-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
     /* FOOTER */
 
     .info-grid {
