@@ -1,1 +1,0 @@
-document.getElementById("last-modified-thanks").textContent = document.lastModified;

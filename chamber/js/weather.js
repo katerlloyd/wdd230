@@ -12,9 +12,8 @@ fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
     const humidity = document.querySelector('.humidity');
     humidity.textContent = jsonObject.current.humidity;
 
-    //#region Forecast
-    for (let i = 0; i < 3; i++) {
-        
+    //#region Forecast   
+    Object.keys(jsonObject.daily).slice(0,3).forEach(i => {
         let forecastdate = new Date(jsonObject.daily[i].dt * 1000);
 
         let flexcol = document.createElement('div');
@@ -41,19 +40,18 @@ fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
         weather_info_div.appendChild(data_span);            
 
         document.querySelector('div.flex').appendChild(flexcol);
-    }
+    });
     //#endregion
 
     //#region Weather Alerts
-    for (let i = 0; i < jsonObject.alerts.length; i++) {
-
-        if (jsonObject.alerts) {
+    if (jsonObject.alerts) {
+        Object.keys(jsonObject.alerts).forEach(i => {
             let banner = document.createElement('div');
             banner.classList.add('weather-alert');
 
             let button = document.createElement('button');
             button.setAttribute('type', 'button');
-            button.innerHTML = "&#10799;";
+            button.innerHTML = "&times;";
             button.classList.add('close-button');
             button.addEventListener("click", () => {
                 banner.remove('weather-alert');
@@ -65,20 +63,31 @@ fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
             let description = document.createElement('p');
             description.textContent = jsonObject.alerts[i].description;
 
-            banner.appendChild(button);
+            title.addEventListener("onmouseover", () => {
+                if (description.style.display === "none") {
+                    description.style.display = "block";
+                }
+            })
+
+            title.addEventListener("onmouseout", () => {
+                if (description.style.display === "block") {
+                    description.style.display = "none";
+                }
+            })
+
             banner.appendChild(title);
+            banner.appendChild(button);
             banner.appendChild(description);
         
             const body = document.querySelector('body');
             body.prepend(banner);
-
-        } else {
-            bannerClass = document.querySelector('weather-alert');
-            if (bannerClass != null) {
-                banner.remove('weather-alert');
-            }
+        });
+    } else {
+        bannerClass = document.querySelector('weather-alert');
+        if (bannerClass) {
+            banner.remove('weather-alert');
         }
     }
     //#endregion
-  });
+});
   //#endregion

@@ -41,8 +41,10 @@ if('IntersectionObserver' in window) {
 }
 //#endregion 
 
-//#region Copyright Year and Current Date
+//#region Copyright Year and Last Modified Date
 const date = new Date();
 
 document.querySelector("#copyright-year").textContent = date.getFullYear();
+
+document.getElementById("last-modified-date").textContent = document.lastModified;
 //#endregion
