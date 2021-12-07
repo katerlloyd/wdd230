@@ -1,0 +1,23 @@
+@media only screen and (min-width: 60rem) {
+
+    /* ALL PAGES */
+
+    nav {
+        padding: 0 6rem;
+    }
+
+    /* HOME */
+    
+    .mission-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .mission {
+        max-width: 85%;
+    }
+    
+    .goal-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

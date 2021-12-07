@@ -1,0 +1,44 @@
+@media only screen and (min-width: 43rem) {
+	
+	/* ALL PAGES */
+
+	/* nav {
+		font-size: 0.8rem;
+	} */
+
+    .navigation {
+		display: flex;
+	}
+
+    .navigation a {
+		text-align: center;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 auto;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+    /* HOME */
+
+    .mission-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .goal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .columns-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .weather-container-grid {
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,309 @@
+/* ALL PAGES */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 27px;
+}
+
+header, nav, footer {
+    max-width: 100%;
+}
+
+header {
+    /* align-items: center; */
+    display: flex;
+    /* justify-content: center; */
+    padding: 2rem 1rem;
+}
+
+header, footer {
+    background-color: #000000; 
+    color: #ffffff;
+}
+
+.logo {
+    height: auto;
+    max-width: 5rem;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 2rem;
+    margin: 0 0 0 1rem;
+}
+
+nav {
+    background-color: #b42d12;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: ivory;
+}
+
+.navigation {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    list-style-type: none;
+	margin: 0;
+    overflow: hidden;
+	padding: 0;	
+    text-align: center;
+}
+
+.navigation a {
+    color: ivory;
+    display: block;
+    padding: 0.75rem;
+    transition: 0.25s;
+}
+
+.navigation .active a {
+    background-color: #f7ddd7;
+    color: #b42d12;
+}
+
+.navigation a:hover, .navigation a:focus {
+    background-color: #f7ddd7;
+    color: #000000;
+    outline: none;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+    margin: auto;
+}
+
+.responsive li {
+	display: block;
+}
+
+.responsive .bar-icon {
+    border-bottom: 4px solid #b42d12;
+    color: #ffffff;
+}
+
+main {
+    padding: 0 6rem;
+    text-align: center;
+}
+
+main strong {
+    color: #b42d12;
+}
+
+h1, h2, h3 {
+    font-family: "Raleway", sans-serif;
+}
+
+h2 {
+    color: #b42d12;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #000000; 
+    text-decoration: none;
+}
+
+a:hover {
+    color:#b42d12;
+}
+
+/* HOME */
+
+.hero-div {
+    margin: 0 auto;
+}
+
+.hero-img {
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+}
+
+.mission-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.mission p {
+    text-align: left;
+}
+
+.goal-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.goal-container-grid {
+    align-items: center;
+    background-color: #f7ddd7;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.goal-container-grid p, .goal-container-grid h2 {
+    padding: 1rem;
+    margin: 0;
+}
+
+.goal-container-grid h2 {
+    font-family: "Open Sans", sans-serif;
+}
+
+.goal-container-grid p {
+    text-align: left;
+}
+
+.columns-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.upcoming-events-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.event-grid {
+    background-color: #b42d12;
+    color: #ffffff;
+    text-align: left;
+}
+
+.event-details h3, .event-details p {
+    margin: 0;
+    padding: 0.75rem;
+}
+
+.event-details p {
+    color: #f7ddd7;
+    font-size: 1.5rem;
+}
+
+.weather-container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.weather {
+    max-width: fit-content;
+}
+
+.weather div {
+    font-size: 2rem;
+}
+
+.weather-grid {
+    column-gap: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.weather-grid div {
+    background-color: #f7ddd7;
+    padding: 0.5rem;
+}
+
+.weather-grid p {
+    color: #b42d12;
+    font-size: 1.25rem;
+}
+
+div.weather-condition::first-letter {
+    text-transform: capitalize;
+}
+
+.weather-condition {
+    margin-top: 0.5rem;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex img {
+    padding: 0.25rem;
+}
+
+.flex-col {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    flex: 1 1 auto;
+}
+
+.weather-info {
+    background-color: #000000;
+}
+
+.flex-col:hover {
+    opacity: 0.75;
+}
+
+.col-head {
+    background-color: #f7ddd7;
+    border-bottom: 3px solid #b42d12;
+    color: #b42d12;
+    display: block;
+    padding: 0.25rem;
+}
+
+.data {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.event-grid {
+    grid-template-columns: 1fr;
+}
+
+/* FOOTER */
+
+.contact-info {
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.contact-info h3 {
+    border-bottom: 1px solid #098286;
+    max-width: fit-content;
+    text-align: left;
+}
+
+.social-media img {
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+footer{
+    font-size: 0.85em;
+    padding: 0.1rem 0.1rem;
+    text-align: center;
+}
+
+footer a {
+    color: #f7ddd7;
+}
+
+.footer-info {
+    padding: 1rem;
+}
