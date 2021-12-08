@@ -76,7 +76,7 @@
             </div>
             <section class="form">
                 <h2>Become A Member</h2>
-                <form class="join-grid">
+                <form class="join-grid" action="thanks.html" method="get">
                     <div class="person">
                         <fieldset>
                             <label for="first-name">First Name
@@ -112,24 +112,17 @@
                         </fieldset>
                         <fieldset>
                             <label for="business-website">Business Website
-                                <input type="text" name="business-website" id="business-website" required placeholder="walmart.com">
+                                <input type="text" name="business-website" id="business-website" placeholder="walmart.com">
                             </label>
                         </fieldset>
                         <fieldset>
                             <label for="business-address">Business Address
-                                <input type="text" name="business-address" id="business-address" required placeholder="8300 W Overland Rd">
+                                <input type="text" name="business-address" id="business-address" placeholder="8300 W Overland Rd">
                             </label>
                         </fieldset>
                         <fieldset>
                             <label for="zip">Business Zip Code
-                                <input type="number" name="zip" id="zip" pattern="^[0-9]{5,}" required placeholder="83709">
-                            </label>
-                        </fieldset>
-                    </div>
-                    <div class="other">
-                        <fieldset id="full-area">
-                            <label for="description">Business Description 
-                                <textarea name="description" id="description" cols="35" rows="8" tabindex="0"></textarea>
+                                <input type="number" name="zip" id="zip" placeholder="83709">
                             </label>
                         </fieldset>
                         <fieldset>
@@ -141,6 +134,13 @@
                                     <option value="silver">Silver ($400)</option>
                                     <option value="gold">Gold ($1000)</option>
                                 </select>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="other">
+                        <fieldset id="full-area">
+                            <label for="description">Business Description 
+                                <textarea name="description" id="description" rows="8" tabindex="0"></textarea>
                             </label>
                         </fieldset>
                         <div id="button">

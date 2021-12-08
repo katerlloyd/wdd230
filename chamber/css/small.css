@@ -378,8 +378,9 @@ input:valid, select:valid {
     background-color: #b42d12;
     border: 2px solid #f7ddd7;
     color: #f7ddd7;
-    float: right;
+    cursor: pointer;
     font-weight: bold;
+    margin: 0.25rem;
     padding: 1rem 2rem;
     text-transform: uppercase;
 }
