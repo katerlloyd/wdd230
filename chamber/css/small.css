@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-header, nav, footer {
+header, main, nav, footer {
     max-width: 100%;
 }
 
@@ -201,6 +201,7 @@ a:hover {
 
 .weather-container-grid {
     display: grid;
+    grid-gap: 1rem;
     grid-template-columns: 1fr;
     justify-items: center;
 }
@@ -259,7 +260,7 @@ div.weather-condition::first-letter {
 
 .weather-info {
     background-color: #000000;
-    padding: 0.75rem;
+    padding: 1rem;
 }
 
 .flex-col:hover {
@@ -279,7 +280,7 @@ div.weather-condition::first-letter {
     padding-bottom: 0.5rem;
 }
 
-/* JOIN */
+/* JOIN and CONTACT */
 
 .join h3 {
     color: #b42d12;
@@ -322,6 +323,7 @@ div.weather-condition::first-letter {
 .form {
     border: 4px dotted #000000;
     margin: 2rem 0;
+    padding: 0.5rem;
 }
 
 .form h2 {
@@ -330,7 +332,7 @@ div.weather-condition::first-letter {
     padding: 1rem;
 }
 
-.join-grid {
+.join-grid, .contact-grid {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr;
@@ -343,6 +345,8 @@ fieldset, input, select, textarea, #submit {
 
 fieldset {
     border: none;
+    margin: 1rem;
+    padding: 0;
     text-align: left;
 }
 
@@ -351,9 +355,10 @@ input, select, textarea {
     display: block;
     font-size: 1.25rem;
     padding: 0.75rem;
+    width: 100%;
 }
 
-input:required, select:required {
+input:required, select:required, textarea:required {
     background-color: #f7ddd7;
 }
 
@@ -365,7 +370,7 @@ input:valid, select:valid {
     color: #b42d12;
 }
 
-.join-grid .notice {
+.notice {
     font-size: 1.25rem;
     text-align: left;
 }
@@ -374,15 +379,41 @@ input:valid, select:valid {
     margin: 1rem;
 }
 
-#submit {
+#submit, #send {
     background-color: #b42d12;
     border: 2px solid #f7ddd7;
     color: #f7ddd7;
     cursor: pointer;
     font-weight: bold;
-    margin: 0.25rem;
+    margin-top: 1rem;
     padding: 1rem 2rem;
     text-transform: uppercase;
+    width: fit-content;
+}
+
+/* BOARD OF DIRECTORS */
+
+.directors-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.directors-grid div {
+    background-color: #f7ddd7;
+    padding: 1rem;
+    max-width: 100%;
+}
+
+.board-name {
+    color: #b42d12;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+
+.board-title {
+    font-size: 1.5rem;
 }
 
 /* ATTRIBUTIONS */
@@ -391,9 +422,9 @@ input:valid, select:valid {
     text-align: left;
 }
 
-/* THANKS */
+/* THANKS and CONGRATULATIONS */
 
-.thanks {
+.thanks, .congratulations {
     background-color: #f7ddd7;
     border: 2px dotted #b42d12;
     border-radius: 1rem;

@@ -76,7 +76,7 @@
             </div>
             <section class="form">
                 <h2>Become A Member</h2>
-                <form class="join-grid" action="thanks.html" method="get">
+                <form class="join-grid" action="congratulations.html" method="get">
                     <div class="person">
                         <fieldset>
                             <label for="first-name">First Name
@@ -85,7 +85,7 @@
                         </fieldset>
                         <fieldset>
                             <label for="last-name">Last Name
-                                <input type="text" name="Last-name" id="last-name" required pattern="^((?:\s*[A-Za-z]\s*){2,})$" placeholder="Doe">
+                                <input type="text" name="last-name" id="last-name" required pattern="^((?:\s*[A-Za-z]\s*){2,})$" placeholder="Doe">
                             </label>
                         </fieldset>
                         <fieldset>                                
@@ -138,15 +138,15 @@
                         </fieldset>
                     </div>
                     <div class="other">
-                        <fieldset id="full-area">
+                        <fieldset>
                             <label for="description">Business Description 
-                                <textarea name="description" id="description" rows="8" tabindex="0"></textarea>
+                                <textarea name="description" id="description" rows="8" tabindex="0" placeholder="Description"></textarea>
                             </label>
+                            <div id="button">
+                                <input type="submit" name="submit" id="submit" value="Join" tabindex="0">
+                            </div>
+                            <p class="notice">* Required items have a colored background.</p>
                         </fieldset>
-                        <div id="button">
-                            <input type="submit" name="submit" id="submit" value="Join" tabindex="0">
-                        </div>
-                        <p class="notice">* Required items have a colored background.</p>
                     </div>
                 </form>
             </section>

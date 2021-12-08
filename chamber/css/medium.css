@@ -19,38 +19,9 @@
 		display: none;
 	}
 
-    /* HOME */
+    /* OTHER */
 
-    .mission-container {
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    .goal-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .columns-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .weather-container-grid {
-        grid-gap: 1rem;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    /* JOIN */
-
-    .membership-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .join-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    /* FOOTER */
-
-    .info-grid {
+    .mission-container, .weather-container-grid, .columns-grid, .membership-grid, .join-grid, .contact-grid, .directors-grid, .info-grid {
         grid-template-columns: 1fr 1fr;
     }
 }

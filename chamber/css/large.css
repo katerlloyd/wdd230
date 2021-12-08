@@ -3,10 +3,10 @@
     /* ALL PAGES */
 
     nav, main {
-        padding: 0 7rem;
+        padding: 0 10%;
     }
 
-    /* HOME */
+    /* HOME and  BOARD OF DIRECTORS and FOOTER*/
     
     .mission-container {
         grid-template-columns: 1fr;
@@ -17,7 +17,7 @@
         max-width: 85%;
     }
     
-    .goal-grid {
+    .goal-grid, .join-grid, .directors-grid, .info-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -29,15 +29,5 @@
 
     .membership-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .join-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    /* FOOTER */
-
-    .info-grid {
-        grid-template-columns: 1fr 1fr 1fr;
     }
 }
