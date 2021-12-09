@@ -19,6 +19,16 @@
 		display: none;
 	}
 
+    /* DIRECTORY */
+
+    .grid-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .list-layout .organization-div {
+        grid-template-columns: 1fr 1fr;
+    }
+
     /* OTHER */
 
     .mission-container, .weather-container-grid, .columns-grid, .membership-grid, .join-grid, .contact-grid, .directors-grid, .info-grid {

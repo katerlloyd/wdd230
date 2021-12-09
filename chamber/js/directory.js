@@ -21,7 +21,14 @@ fetch(directory).then((response) => response.json()).then((jsonObject) => {
         div.classList.add('organization-div');
 
         let name = document.createElement('h3');
-        name.textContent = jsonObject.organizations[i].name;
+
+        if (jsonObject.organizations[i].logo != "" || jsonObject.organizations[i].website != undefined) {
+            let logo = document.createElement('img');
+            logo.setAttribute('src', jsonObject.organizations[i].logo);
+            logo.setAttribute('alt', `${jsonObject.organizations[i].name} logo`);
+
+            div.appendChild(logo);
+        }
         
         let address = document.createElement('p');
         address.textContent = jsonObject.organizations[i].address;
@@ -32,23 +39,16 @@ fetch(directory).then((response) => response.json()).then((jsonObject) => {
         if (jsonObject.organizations[i].website != "" || jsonObject.organizations[i].website != undefined) {
             let website = document.createElement('a');
             website.setAttribute('href', jsonObject.organizations[i].website);
+            website.textContent = jsonObject.organizations[i].name;
 
-            div.appendChild(website);
-            website.appendChild(name);
+            div.appendChild(name);
+            name.appendChild(website);
         } else {
             div.appendChild(name);
         }
-
+        
         div.appendChild(address);
         div.appendChild(phone);
-
-        if (jsonObject.organizations[i].logo != "" || jsonObject.organizations[i].website != undefined) {
-            let logo = document.createElement('img');
-            logo.setAttribute('src', jsonObject.organizations[i].logo);
-            logo.setAttribute('alt', `${jsonObject.organizations[i].name} logo`);
-
-            div.appendChild(logo);
-        }
 
         document.querySelector('div.directory-info').appendChild(div);
     })
