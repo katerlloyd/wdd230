@@ -391,6 +391,25 @@ input:valid, select:valid {
     width: fit-content;
 }
 
+
+/* DIRECTORY */
+
+.grid-layout {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.list-layout {
+    text-align: left;
+}
+
+.organization-div {
+    background-color: #f7ddd7;
+    margin: 1rem;
+    padding: 1rem;
+}
+
 /* BOARD OF DIRECTORS */
 
 .directors-grid {
