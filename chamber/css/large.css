@@ -37,6 +37,10 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .list-layout .organization-div {
+        padding: 0 1rem;
+    }
+
     /* FOOTER */
 
     #footer-img {

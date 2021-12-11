@@ -19,7 +19,7 @@
       "phone": "(208) 323-7961",
       "address": "10889 W Fairview Ave",
       "website": "https://camexicanfood.com",
-      "logo": "californiamexican.jpg"
+      "logo": "californiamexicanfood.png"
     },
     {
       "name": "Kohl's",
@@ -36,6 +36,13 @@
       "logo": "target.png"
     },
     {
+      "name": "Altitude Trampoline Park",
+      "phone": "(208) 375-4707",
+      "address": "1301 N Milwaukee St",
+      "website": "https://www.altitudetrampolinepark.com/locations/boise",
+      "logo": "altitudetrampolinepark.png"
+    },
+    {
       "name": "WinCo Foods",
       "phone": "(208) 424-1634",
       "address": "110 E Myrtle St",
@@ -43,18 +50,11 @@
       "logo": "winco.png"
     },
     {
-      "name": "Altitude Trampoline Park",
-      "phone": "(208) 375-4707",
-      "address": "1301 N Milwaukee St",
-      "website": "https://www.altitudetrampolinepark.com/locations/boise",
-      "logo": "altitudetrampolinepark.jpg"
-    },
-    {
       "name": "Farm Bureau Insurance",
       "phone": "(208) 375-3411",
       "address": "1250 S Allante Ave",
       "website": "https://www.idahofarmbureauinsurance.com/insurance-agents/boise",
-      "logo": "farmureaubinsurance.jpg"
+      "logo": "farmbureauinsurance.png"
     },
     {
       "name": "Alexander Orthodontics",

@@ -28,8 +28,8 @@ fetch(directory).then((response) => response.json()).then((jsonObject) => {
             logo.classList.add('directory-logo');
             logo.setAttribute('src', `images/${jsonObject.organizations[i].logo}`);
             logo.setAttribute('alt', `${jsonObject.organizations[i].name} logo`);
-            logo.setAttribute('height', '60');
-            logo.setAttribute('width', '60');
+            logo.setAttribute('height', '65');
+            logo.setAttribute('width', '65');
 
             div.appendChild(logo);
         } else {

@@ -420,10 +420,6 @@ input:valid, select:valid {
     color: #ffffff;
 }
 
-.list-layout {
-    max-width: fit-content;
-}
-
 .list-layout .organization-div {
     align-items: center;
     display: grid;
