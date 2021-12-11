@@ -5,14 +5,14 @@
       "phone": "(208) 321-9077",
       "address": "8300 W Overland Rd",
       "website": "https://www.walmart.com/store/2508-boise-id",
-      "logo": "walmart.jpg"
+      "logo": "walmart.png"
     },
     {
       "name": "Panda Express",
       "phone": "(208) 323-7869",
       "address": "7804 W Overland Rd",
       "website": "https://www.pandaexpress.com/userlocation/1545/id/boise/7804-overland-drive",
-      "logo": "pandaexpress.jpg"
+      "logo": "pandaexpress.png"
     },
     {
       "name": "California Mexican Food",
@@ -26,21 +26,21 @@
       "phone": "(208) 321-4506",
       "address": "400 N Milwaukee St",
       "website": "https://www.kohls.com/stores/id/boise-1441.shtml?utm_source=google&utm_medium=organic&utm_campaign=local",
-      "logo": "kohls.jpg"
+      "logo": "kohls.png"
     },
     {
       "name": "Target",
       "phone": "(208) 375-3275",
       "address": "633 N Milwaukee St",
       "website": "https://www.target.com/sl/boise/617",
-      "logo": "target.jpg"
+      "logo": "target.png"
     },
     {
       "name": "WinCo Foods",
       "phone": "(208) 424-1634",
       "address": "110 E Myrtle St",
       "website": "https://www.wincofoods.com",
-      "logo": "winco.jpg"
+      "logo": "winco.png"
     },
     {
       "name": "Altitude Trampoline Park",
@@ -57,18 +57,18 @@
       "logo": "farmureaubinsurance.jpg"
     },
     {
-      "name": "Globally Optic",
-      "phone": "(208) 480-1422",
-      "address": "4195 N Milwaukee St",
-      "website": "https://globallyoptic.online",
-      "logo": "globallyoptic.jpg"
+      "name": "Alexander Orthodontics",
+      "phone": "(208) 377-0252",
+      "address": "8000 W Ustick Rd",
+      "website": "http://boiseorthodontist.squarespace.com/",
+      "logo": "alexanderorthodontics.png"
     },
     {
       "name": "Albertsons",
       "phone": "(208) 375-2542",
       "address": "1520 N Cole Rd",
       "website": "https://local.albertsons.com/id/boise/1520-n-cole-rd.html",
-      "logo": "albertsons.jpg"
+      "logo": "albertsons.png"
     }
   ]
 }

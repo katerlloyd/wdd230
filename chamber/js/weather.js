@@ -13,7 +13,7 @@ fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
     humidity.textContent = jsonObject.current.humidity;
 
     //#region Forecast   
-    Object.keys(jsonObject.daily).slice(0,3).forEach(i => {
+    Object.keys(jsonObject.daily).slice(1,4).forEach(i => {
         let forecastdate = new Date(jsonObject.daily[i].dt * 1000);
 
         let flexcol = document.createElement('div');
@@ -32,6 +32,8 @@ fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
         img.setAttribute("src", `images/${jsonObject.daily[i].weather[0].icon}.png`);
         img.setAttribute("alt", `Icon depicting ${jsonObject.daily[i].weather[0].description} in Boise, Idaho`);
         img.setAttribute('loading', 'lazy');
+        img.setAttribute('height', '128');
+        img.setAttribute('width', '128');
         weather_info_div.appendChild(img);
 
         let data_span = document.createElement('span');
