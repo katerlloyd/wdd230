@@ -31,7 +31,7 @@
 
     /* OTHER */
 
-    .mission-container, .weather-container-grid, .columns-grid, .membership-grid, .join-grid, .contact-grid, .directors-grid, .info-grid {
+    .mission-container, .columns-grid, .membership-grid, .join-grid, .contact-grid, .directors-grid, .info-grid {
         grid-template-columns: 1fr 1fr;
     }
 }

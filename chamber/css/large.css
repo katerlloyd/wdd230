@@ -21,6 +21,10 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .weather-container-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .weather-grid div {
         padding: 1.5rem;
     }

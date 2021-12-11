@@ -11,8 +11,9 @@ header, main, nav, footer {
 }
 
 header {
+    align-items: center;
     display: flex;
-    padding: 2rem 1rem;
+    flex-direction: row;
 }
 
 header, footer {
@@ -20,19 +21,17 @@ header, footer {
     color: #ffffff;
 }
 
-.logo {
-    height: auto;
-    max-width: 5rem;
+.headings h1, .logo {
+    margin: 0;
+    padding: 0.5rem;
 }
 
-.headings {
-    display: flex;
-    flex-direction: column;
+.logo {
+    max-width: none;
 }
 
 .headings h1 {
-    font-size: 2rem;
-    margin: 0 0 0 1rem;
+    font-size: 2.5rem;
 }
 
 nav {
@@ -496,11 +495,6 @@ input:valid, select:valid {
     grid-template-columns: 1fr;
     justify-items: center;
     padding: 1rem;
-}
-
-.info-grid #footer-img {
-    border: 2px solid #b42d12;
-    border-radius: 1rem;
 }
 
 .contact-info {
