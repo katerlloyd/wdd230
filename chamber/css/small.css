@@ -125,11 +125,35 @@ a:hover {
 /* HOME */
 
 .hero-div {
-    margin: 0 auto;
+    position: relative;
+}
+
+.hero-div a {
+    color:#000000;
+}
+
+.hero-div a:hover {
+    color: #b42d12;
+}
+
+.hero-text {
+    font-size: 2rem;
+    left: 50%;
+    max-width: 400px;
+    position: absolute;
+    text-align: center;
+    text-shadow: -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff,
+        1px -1px 0 #ffffff;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .hero-img {
     box-shadow: 0 2.5px 10px 2.5px #00000066;
+    margin: 0.5rem 0;
+    background-position: center;
+    position: relative;
 }
 
 .mission-container {

@@ -19,6 +19,12 @@
 		display: none;
 	}
 
+    /* HOME */
+
+    .hero-text {
+        max-width: 100%;
+    }
+
     /* DIRECTORY */
 
     .grid-layout {
