@@ -1,5 +1,6 @@
 //#region Weather API
-const weatherapiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=43.6228&lon=-116.3092&units=imperial&appid=c3affef608fbd43350f108a8f72cddac';
+// const weatherapiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=43.6228&lon=-116.3092&units=imperial&appid=c3affef608fbd43350f108a8f72cddac';
+const weatherapiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=40.972958&lon=-117.735687&units=imperial&appid=c3affef608fbd43350f108a8f72cddac';
 
 fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
     
@@ -48,7 +49,7 @@ fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
     //#region Weather Alerts
     if (jsonObject.alerts) {
         Object.keys(jsonObject.alerts).forEach(i => {
-            let banner = document.createElement('div');
+            let banner = document.createElement('section');
             banner.classList.add('weather-alert');
 
             let button = document.createElement('button');
@@ -63,22 +64,28 @@ fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
             title.textContent = jsonObject.alerts[i].event;
 
             let description = document.createElement('p');
+            description.style.display = "none";
             description.textContent = jsonObject.alerts[i].description;
+            description.textContent = description.textContent.replaceAll("...", " - ");
+            description.innerHTML = description.innerHTML.replaceAll("*", "<br><br>");
 
-            title.addEventListener("onmouseover", () => {
-                if (description.style.display === "none") {
+            let showbutton = document.createElement('button');
+            showbutton.setAttribute('type', 'button');
+            showbutton.innerHTML = "Show Details &#9651;";
+            showbutton.classList.add('show-button');
+            showbutton.addEventListener("click", () => {
+                if (description.style.display == "none") {
                     description.style.display = "block";
-                }
-            })
-
-            title.addEventListener("onmouseout", () => {
-                if (description.style.display === "block") {
+                    showbutton.innerHTML = "Show Details &#9661;";
+                } else {
                     description.style.display = "none";
+                    showbutton.innerHTML = "Show Details &#9651;";
                 }
             })
 
-            banner.appendChild(title);
             banner.appendChild(button);
+            banner.appendChild(title);
+            banner.appendChild(showbutton);
             banner.appendChild(description);
         
             const body = document.querySelector('body');

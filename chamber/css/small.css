@@ -304,6 +304,39 @@ div.weather-condition::first-letter {
     padding-bottom: 0.5rem;
 }
 
+.weather-alert {
+    align-items: center;
+    background-color: #f7ddd7;
+    border-left: 10px solid #b42d12;
+    border-right: 10px solid #b42d12;
+    border-top: 2px solid #b42d12;
+    border-bottom: 2px solid #b42d12;
+    margin: 0;
+    padding: 1rem;
+}
+
+.weather-alert h2 {
+    margin: 0.5rem;
+}
+
+.weather-alert p {
+    padding: 1rem;
+}
+
+.close-button, .show-button {
+    border: 2px solid #ffffff;
+    padding: 0.5rem 1rem;
+}
+
+.close-button {
+    font-size: 2rem;
+    float: right;
+}
+
+.show-button {
+    font-size: 1.5rem;
+}
+
 /* BOISE */
 
 .boise-grid {
@@ -381,7 +414,7 @@ div.weather-condition::first-letter {
     justify-items: center;
 }
 
-fieldset, input, select, textarea, #submit, #send, .grid-button, .list-button {
+fieldset, input, select, textarea, #submit, #send, .grid-button, .list-button, .close-button, .show-button {
     border-radius: 0.5rem;
 }
 
@@ -444,7 +477,7 @@ input:valid, select:valid {
     justify-content: right;
 }
 
-.grid-button, .list-button, #submit, #send {
+.grid-button, .list-button, .close-button, .show-button, #submit, #send {
     background-color: #b42d12;
     border: 2px solid #f7ddd7;
     color: #f7ddd7;
@@ -457,7 +490,7 @@ input:valid, select:valid {
     margin-bottom: 1rem;
 }
 
-.grid-button:hover, .list-button:hover, #submit:hover, #send:hover {
+.grid-button:hover, .list-button:hover, .close-button:hover, .show-button:hover, #submit:hover, #send:hover {
     color: #ffffff;
 }
 
