@@ -129,11 +129,11 @@ a:hover {
 }
 
 .hero-div a {
-    color:#000000;
+    color:#b42d12;
 }
 
 .hero-div a:hover {
-    color: #b42d12;
+    color: #000000;
 }
 
 .hero-text {
@@ -143,8 +143,8 @@ a:hover {
     position: absolute;
     text-align: center;
     text-shadow: -1px 1px 0 #ffffff,
-        1px 1px 0 #ffffff,
-        1px -1px 0 #ffffff;
+    1px -1px 0 #ffffff,
+    1px 1px 0 #ffffff;
     top: 50%;
     transform: translate(-50%, -50%);
 }
