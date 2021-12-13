@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
         <script defer src="js/site.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+        <script defer src="js/boise.js"></script>
     </head>
     <body>
         <header>
@@ -33,8 +35,31 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <main>
+        <main class="boise">
             <h2>Boise, Idaho</h2>
+            <section class="boise-grid">
+                <img src="images/tower.jpg" alt="Tower with the words Boise Depot on it" loading="lazy" height="400" width="500">
+                <div>
+                    <h3>History</h3>
+                    <p>Boise is known as the "City of Trees" and was orginally named "Les Bois", meaning woods, by French-Canadians in the 1830s. Around the 1860s, gold deposits brought many people to the area and many farms and communities sprung up as a result. Residing in Ada County, Boise is now the capital of Idaho and is one of the largest cities in the state.</p>
+                </div>
+                <div>
+                    <h3>Demographics</h3>
+                    <p>Today, Boise is a rapidly growing city with a population of <strong>229,993</strong> in 2021. It is also the 15th fastest growing city in the United States and has had an annual growth rate of about 2.5% in recent years. There are slightly more females than males and the median age of people living in Boise is 36.6 years-old. The average family size is about 3.</p>
+                </div>
+                <div class="chart" id="piechart-race-container"></div>
+                <div class="household-info">
+                    <p>The average income for many households in Boise is often high due to the large number of jobs available in a variety of different industries.</p>
+                    <div class="chart" id="chart-house-container"></div>
+                </div>
+                <div class="chart" id="piechart-education-container"></div>
+            </section>
+            <section class="current-events-grid">
+                <h3>Current Events</h3>
+            </section>
+            <section>
+                <h3>Attractions</h3>
+            </section>
         </main>
         <footer>
             <div class="info-grid">

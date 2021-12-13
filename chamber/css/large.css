@@ -21,7 +21,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .weather-container-grid {
+    .weather-container-grid, .boise-grid {
         grid-template-columns: 1fr 1fr;
     }
 

@@ -304,9 +304,27 @@ div.weather-condition::first-letter {
     padding-bottom: 0.5rem;
 }
 
+/* BOISE */
+
+.boise-grid {
+    align-items: center;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: left;
+}
+
+.chart {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* JOIN and CONTACT */
 
-.join h3 {
+.join h3, .boise h3 {
     color: #b42d12;
 }
 
