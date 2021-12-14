@@ -1,6 +1,4 @@
 @media only screen and (min-width: 43rem) {
-	
-	/* ALL PAGES */
 
     .navigation {
 		display: flex;
@@ -19,25 +17,15 @@
 		display: none;
 	}
 
-    /* HOME */
-
     .hero-text {
         max-width: 100%;
-    }
-
-    /* DIRECTORY */
-
-    .grid-layout, .attractions {
-        grid-template-columns: 1fr 1fr;
     }
 
     .list-layout .organization-div {
         grid-template-columns: 0.5fr 2fr 1.5fr 1fr;
     }
 
-    /* OTHER */
-
-    .mission-container, .columns-grid, .membership-grid, .join-grid, .contact-grid, .directors-grid, .info-grid, .boise .upcoming-events-grid {
+    .mission-container, .columns-grid, .membership-grid, .join-grid, .contact-grid, .directors-grid, .info-grid, .boise .upcoming-events-grid, .grid-layout, .attractions {
         grid-template-columns: 1fr 1fr;
     }
 }

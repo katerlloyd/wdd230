@@ -1,28 +1,44 @@
-/* ALL PAGES */
-
 body {
-    font-family: "Open Sans", sans-serif;
     font-size: 27px;
+}
+
+body, .goal-container-grid h2, .membership-grid h3 {
+    font-family: "Open Sans", sans-serif;
+}
+
+.navigation, h1, h2, h3, .board-name {
+    font-family: "Raleway", sans-serif;
+}
+
+body, .headings h1, .logo, .list-layout h3, .list-layout p, .list-layout img, .grid-layout h3, .grid-layout p, .grid-layout img, .goal-container-grid p, .goal-container-grid h2, .navigation, .event-details, .event-details h3, .event-details p, .weather-grid p, .weather-alert, .form h2, .organization-div {
     margin: 0;
 }
 
-header, main, nav, footer {
+header, main, nav, footer, img, .directors-grid div {
     max-width: 100%;
 }
 
-header {
-    align-items: center;
+header, .flex {
     display: flex;
+}
+
+header {
     flex-direction: row;
 }
 
-header, footer {
+header, .goal-container-grid, .list-layout .organization-div, .weather-alert, .boise-grid, .attractions {
+    align-items: center;
+}
+
+header, footer, .weather-info {
     background-color: #000000; 
+}
+
+header, footer, .navigation a, .responsive .bar-icon, .event-details, .flex-col, .boise .upcoming-events-grid h3, .grid-button:hover, .list-button:hover, .close-button:hover, .show-button:hover, #submit:hover, #send:hover, footer a:hover {
     color: #ffffff;
 }
 
-.headings h1, .logo {
-    margin: 0;
+.headings h1, .logo, .weather-grid div, .weather-condition, .flex img, .list-layout h3, .list-layout p, .list-layout img, .grid-layout h3, .grid-layout p, .grid-layout img, .level, .form {
     padding: 0.5rem;
 }
 
@@ -34,95 +50,95 @@ header, footer {
     font-size: 2.5rem;
 }
 
-nav {
-    background-color: #b42d12;
-    letter-spacing: 2px;
+nav, .thanks, .congratulations {
     margin: 0 auto;
+}
+
+nav {
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-nav a:hover {
-    background-color: ivory;
+nav, .event-details, .grid-button, .list-button, .close-button, .show-button, #submit, #send {
+    background-color: #b42d12;
 }
 
-.navigation {
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-    list-style-type: none;
-	margin: 0;
-    overflow: hidden;
-	padding: 0;	
+nav a:hover, .list-layout .organization-div:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.navigation, main, footer, .weather-grid, .hero-text {
     text-align: center;
 }
 
-.navigation a {
-    color: ivory;
+.navigation, .list-layout, .list-layout .organization-div, fieldset {
+    padding: 0;	
+}
+
+.navigation, .membership-grid ul li::before, .grid-button, .list-button, .close-button, #submit, #send, .board-name {
+    font-weight: bold;
+}
+
+.navigation {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navigation a, .navigation li:first-child, .responsive li, .col-head, .data, input, select, textarea, .list-layout {
     display: block;
-    padding: 0.75rem;
+}
+
+.navigation a {
     transition: 0.25s;
 }
 
-.navigation .active a {
-    background-color: #f7ddd7;
+.navigation .active a, main strong, h2, a, .weather-grid p, .col-head, .join h3, .boise h3, .membership-grid ul li::before, ::placeholder, select, .board-name {
     color: #b42d12;
 }
 
-.navigation a:hover, .navigation a:focus {
+.navigation .active a, .navigation a:hover, .navigation a:focus, .goal-container-grid, .weather-grid div, .weather-condition, .col-head, .weather-alert, .level, input:required, select:required, textarea:required, .directors-grid div, .organization-div, .thanks, .congratulations, .contact-info {
     background-color: #f7ddd7;
+}
+
+.navigation a:hover, .navigation a:focus, .hero-div a:hover, .contact-info {
     color: #000000;
+}
+
+.navigation a:hover, .navigation a:focus {
     outline: none;
 }
 
-.navigation li:first-child {
-	display: block;
+.navigation li, #footer-img {
+    display: none;
 }
 
 .navigation li {
-	display: none;
     margin: auto;
-}
-
-.responsive li {
-	display: block;
 }
 
 .responsive .bar-icon {
     border-bottom: 4px solid #b42d12;
-    color: #ffffff;
+}
+
+.navigation a, .event-details, .event-details h3, .event-details p, .col-head, input, select, textarea, .list-layout {
+    padding: 0.75rem;
 }
 
 main {
     padding: 0 1rem;
-    text-align: center;
-}
-
-main strong {
-    color: #b42d12;
-}
-
-h1, h2, h3 {
-    font-family: "Raleway", sans-serif;
-}
-
-h2 {
-    color: #b42d12;
 }
 
 img {
-    max-width: 100%;
     height: auto;
 }
 
 a {
-    color: #b42d12; 
     text-decoration: none;
 }
 
 a:hover {
     color:#000000;
 }
-
-/* HOME */
 
 .hero-div {
     position: relative;
@@ -132,16 +148,10 @@ a:hover {
     color:#b42d12;
 }
 
-.hero-div a:hover {
-    color: #000000;
-}
-
 .hero-text {
-    font-size: 2rem;
     left: 50%;
     max-width: 400px;
     position: absolute;
-    text-align: center;
     text-shadow: -1px 1px 0 #ffffff,
     1px -1px 0 #ffffff,
     1px 1px 0 #ffffff;
@@ -156,104 +166,56 @@ a:hover {
     position: relative;
 }
 
-.mission-container {
+.mission-container, .goal-grid, .goal-container-grid, .columns-grid, .upcoming-events-grid, .weather-container-grid, .weather-grid, .boise-grid, .attractions, .membership-grid, .join-grid, .contact-grid, .grid-layout, .list-layout .organization-div, .directors-grid, .info-grid {
     display: grid;
+}
+
+.mission-container, .goal-grid, .columns-grid, .upcoming-events-grid, .weather-container-grid, .boise-grid, .attractions, .membership-grid, .join-grid, .contact-grid, .grid-layout, .directors-grid, .info-grid, .weather-grid {
     grid-gap: 1rem;
+}
+
+.mission-container, .goal-grid, .columns-grid, .upcoming-events-grid, .weather-container-grid, .boise-grid, .attractions, .membership-grid, .join-grid, .contact-grid, .grid-layout, .directors-grid, .info-grid, .list-layout .organization-div {
     grid-template-columns: 1fr;
 }
 
-.mission p {
+.mission p, .goal-container-grid p, .event-details, .boise-grid, .membership-grid ul li, fieldset, .notice, .attributions, .list-layout, .contact-info {
     text-align: left;
-}
-
-.goal-grid {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
 }
 
 .goal-container-grid {
-    align-items: center;
-    background-color: #f7ddd7;
-    display: grid;
     grid-template-columns: 1fr 3fr;
 }
 
-.goal-container-grid p, .goal-container-grid h2 {
-    padding: 1rem;
-    margin: 0;
-}
-
-.goal-container-grid h2 {
-    font-family: "Open Sans", sans-serif;
-}
-
-.goal-container-grid p {
-    text-align: left;
-}
-
-.columns-grid {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
-}
-
 .upcoming-events-grid {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
     justify-content: center;
 }
 
-.event-details {
-    background-color: #b42d12;
-    color: #ffffff;
-    margin: 0;
-    padding: 0.75rem;
-    text-align: left;
-}
-
-.event-details h3, .event-details p {
-    margin: 0;
-    padding: 0.75rem;
-}
-
-.event-details p {
+.event-details p, .grid-button, .list-button, .close-button, .show-button, #submit, #send, footer a {
     color: #f7ddd7;
-    font-size: 1.5rem;
 }
 
-.weather-container-grid {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
+.weather-container-grid, .boise-grid, .attractions, .join-grid, .contact-grid, .directors-grid, .info-grid {
     justify-items: center;
 }
 
-.weather div{
+.event-details p, .show-button, .membership-grid ul li, .list-layout .organization-div, .board-title, footer {
+    font-size: 1.5rem;
+}
+
+.weather-grid p {
+    font-size: 1.75rem;
+}
+
+.weather div, .hero-text, .close-button {
     font-size: 2rem;
 }
 
-.weather div {
+.weather div, .grid-button, .list-button {
     font-size: 3rem;
 }
 
 .weather-grid {
-    display: grid;
-    grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
-    text-align: center;
-}
-
-.weather-grid div {
-    background-color: #f7ddd7;
-    padding: 0.5rem;
-}
-
-.weather-grid p {
-    color: #b42d12;
-    font-size: 1.75rem;
-    margin: 0;
 }
 
 div.weather-condition::first-letter {
@@ -261,30 +223,17 @@ div.weather-condition::first-letter {
 }
 
 .weather-condition {
-    background-color: #f7ddd7;
     color:#b42d12;
     margin-top: 0.5rem;
-    padding: 0.5rem;
 }
 
 .flex {
-    display: flex;
     flex-flow: row wrap;
-}
-
-.flex img {
-    padding: 0.5rem;
 }
 
 .flex-col {
     border: 2px solid #ffffff;
-    color: #ffffff;
     flex: 1 1 auto;
-}
-
-.weather-info {
-    background-color: #000000;
-    padding: 1rem;
 }
 
 .flex-col:hover {
@@ -292,35 +241,22 @@ div.weather-condition::first-letter {
 }
 
 .col-head {
-    background-color: #f7ddd7;
     border-bottom: 3px solid #b42d12;
-    color: #b42d12;
-    display: block;
-    padding: 0.75rem;
 }
 
 .data {
-    display: block;
     padding-bottom: 0.5rem;
 }
 
 .weather-alert {
-    align-items: center;
-    background-color: #f7ddd7;
     border-left: 10px solid #b42d12;
     border-right: 10px solid #b42d12;
     border-top: 2px solid #b42d12;
     border-bottom: 2px solid #b42d12;
-    margin: 0;
-    padding: 1rem;
 }
 
-.weather-alert h2 {
+.weather-alert h2, .social-media img {
     margin: 0.5rem;
-}
-
-.weather-alert p {
-    padding: 1rem;
 }
 
 .close-button, .show-button {
@@ -329,67 +265,11 @@ div.weather-condition::first-letter {
 }
 
 .close-button {
-    font-size: 2rem;
     float: right;
-}
-
-.show-button {
-    font-size: 1.5rem;
-}
-
-/* BOISE */
-
-.boise-grid {
-    align-items: center;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    text-align: left;
-}
-
-.boise-grid img, .boise-grid div {
-    padding: 1rem;
-}
-
-.chart {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.attractions {
-    align-items: center;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
-    justify-items: center;
 }
 
 .attraction-item {
     box-shadow: 0 2.5px 10px 2.5px #00000066;
-    padding: 1rem;
-}
-
-/* JOIN and CONTACT */
-
-.join h3, .boise h3 {
-    color: #b42d12;
-}
-
-.boise .upcoming-events-grid h3 {
-    color: #ffffff;
-}
-
-.membership-grid {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
-}
-
-.membership-grid h3 {
-    font-family: "Open Sans", sans-serif;
 }
 
 .membership-grid ul {
@@ -397,97 +277,61 @@ div.weather-condition::first-letter {
   }
 
 .membership-grid ul li {
-    font-size: 1.5rem;
     padding-bottom: 1rem;
-    text-align: left;
 }
 
 .membership-grid ul li::before {
-    color: #b42d12;
     content: "\2022";
     display: inline-block;
-    font-weight: bold; 
     margin-left: -1rem;
     width: 1rem;
-}
-
-.level {
-    background-color: #f7ddd7;
-    padding: 0.5rem;
 }
 
 .form {
     border: 4px dotted #000000;
     margin: 2rem 0;
-    padding: 0.5rem;
 }
 
 .form h2 {
     border-bottom: 4px dotted #000000;
-    margin: 0;
-    padding: 1rem;
-}
-
-.join-grid, .contact-grid {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
-    justify-items: center;
 }
 
 fieldset, input, select, textarea, #submit, #send, .grid-button, .list-button, .close-button, .show-button {
     border-radius: 0.5rem;
 }
 
+fieldset, .person, .business, .other {
+    margin: 1rem;
+}
+
 fieldset {
     border: none;
-    margin: 1rem;
-    padding: 0;
-    text-align: left;
+}
+
+input, select, textarea, .list-layout, .notice {
+    font-size: 1.25rem;
 }
 
 input, select, textarea, .list-layout {
     border: 2px solid #b42d12;
-    display: block;
-    font-size: 1.25rem;
-    padding: 0.75rem;
     width: 100%;
-}
-
-input:required, select:required, textarea:required {
-    background-color: #f7ddd7;
 }
 
 input:valid, select:valid {
     background-color: none;
 }
 
-::placeholder, select {
-    color: #b42d12;
+.thanks, .congratulations, #submit, #send {
+    padding: 1rem 2rem;
 }
 
-.notice {
-    font-size: 1.25rem;
-    text-align: left;
-}
-
-.person, .business, .other {
-    margin: 1rem;
+footer, #submit, #send {
+    margin-top: 1rem;
 }
 
 #submit, #send {
-    margin-top: 1rem;
-    padding: 1rem 2rem;
     text-transform: uppercase;
     width: fit-content;
-}
-
-/* DIRECTORY */
-
-.grid-layout {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
 }
 
 .grid-layout .organization-div {
@@ -499,130 +343,35 @@ input:valid, select:valid {
 }
 
 .grid-button, .list-button, .close-button, .show-button, #submit, #send {
-    background-color: #b42d12;
     border: 2px solid #f7ddd7;
-    color: #f7ddd7;
     cursor: pointer;
-    font-weight: bold;
 }
 
 .grid-button, .list-button {
-    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.grid-button:hover, .list-button:hover, .close-button:hover, .show-button:hover, #submit:hover, #send:hover {
-    color: #ffffff;
-}
-
-.list-layout .organization-div {
-    align-items: center;
-    display: grid;
-    font-size: 1.5rem;
-    grid-template-columns: 1fr;
-}
-
-.list-layout, .list-layout .organization-div {
-    padding: 0;
-}
-
-.list-layout .organization-div:nth-child(even) {
-    background-color: #ffffff;
-}
-
-.list-layout h3, .list-layout p, .list-layout img, .grid-layout h3, .grid-layout p, .grid-layout img {
-    margin: 0;
-    padding: 0.5rem;
-}
-
-.organization-div {
-    background-color: #f7ddd7;
-    margin: 0;
+.organization-div, .directors-grid div, .info-grid, .form h2, .boise-grid img, .boise-grid div, .attraction-item, .goal-container-grid p, .goal-container-grid h2, .weather-info, .weather-alert, .weather-alert p {
     padding: 1rem;
 }
-
-/* BOARD OF DIRECTORS */
-
-.directors-grid {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
-
-.directors-grid div {
-    background-color: #f7ddd7;
-    padding: 1rem;
-    max-width: 100%;
-}
-
-.board-name {
-    color: #b42d12;
-    font-family: "Raleway", sans-serif;
-    font-weight: bold;
-}
-
-.board-title {
-    font-size: 1.5rem;
-}
-
-/* ATTRIBUTIONS */
-
-.attributions, .list-layout {
-    text-align: left;
-}
-
-/* THANKS and CONGRATULATIONS */
 
 .thanks, .congratulations {
-    background-color: #f7ddd7;
     border: 2px dotted #b42d12;
     border-radius: 1rem;
-    margin: 0 auto;
     max-width: fit-content;
-    padding: 1rem 2rem;
-}
-
-/* FOOTER */
-
-.info-grid {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    padding: 1rem;
 }
 
 .contact-info {
-    color: #000000;
-    background-color: #f7ddd7;
     border: 2px solid #b42d12;
     border-radius: 1rem;
     padding: 0 1rem;
-    text-align: left;
 }
 
 .social-media img {
     border-radius: 0.75rem;
-    margin: 0.5rem;
-}
-
-#footer-img {
-    display: none;
 }
 
 footer {
     border-top: 4px solid #b42d12;
-    font-size: 1.5rem;
-    margin-top: 1rem;
     padding: 0.1rem 0.1rem;
-    text-align: center;
-}
-
-footer a {
-    color: #f7ddd7;
-}
-
-footer a:hover {
-    color: #ffffff;
 }

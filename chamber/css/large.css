@@ -1,12 +1,8 @@
 @media only screen and (min-width: 60rem) {
 
-    /* ALL PAGES */
-
     nav, main {
         padding: 0 10%;
     }
-
-    /* HOME and  BOARD OF DIRECTORS and FOOTER*/
     
     .mission-container {
         grid-template-columns: 1fr;
@@ -17,7 +13,7 @@
         max-width: 85%;
     }
     
-    .goal-grid, .join-grid, .directors-grid, .info-grid, .attractions {
+    .goal-grid, .join-grid, .directors-grid, .info-grid, .attractions, .grid-layout {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -29,23 +25,13 @@
         padding: 1.5rem;
     }
 
-    /* JOIN */
-
     .membership-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    /* DIRECTORY */
-
-    .grid-layout {
-        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .list-layout .organization-div {
         padding: 0 1rem;
     }
-
-    /* FOOTER */
 
     #footer-img {
         display: inline;

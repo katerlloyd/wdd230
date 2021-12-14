@@ -1,6 +1,5 @@
 //#region Weather API
-// const weatherapiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=43.6228&lon=-116.3092&units=imperial&appid=c3affef608fbd43350f108a8f72cddac';
-const weatherapiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=40.972958&lon=-117.735687&units=imperial&appid=c3affef608fbd43350f108a8f72cddac';
+const weatherapiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=43.6228&lon=-116.3092&units=imperial&appid=c3affef608fbd43350f108a8f72cddac';
 
 fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
     
