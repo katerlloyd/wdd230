@@ -56,6 +56,9 @@ nav, .thanks, .congratulations {
 
 nav {
     letter-spacing: 2px;
+}
+
+nav, #submit, #send {
     text-transform: uppercase;
 }
 
@@ -160,7 +163,6 @@ a:hover {
 }
 
 .hero-img {
-    box-shadow: 0 2.5px 10px 2.5px #00000066;
     margin: 0.5rem 0;
     background-position: center;
     position: relative;
@@ -261,14 +263,14 @@ div.weather-condition::first-letter {
 
 .close-button, .show-button {
     border: 2px solid #ffffff;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem; 
 }
 
 .close-button {
     float: right;
 }
 
-.attraction-item {
+.attraction-item, .hero-img {
     box-shadow: 0 2.5px 10px 2.5px #00000066;
 }
 
@@ -330,7 +332,6 @@ footer, #submit, #send {
 }
 
 #submit, #send {
-    text-transform: uppercase;
     width: fit-content;
 }
 
@@ -356,14 +357,15 @@ footer, #submit, #send {
 }
 
 .thanks, .congratulations {
-    border: 2px dotted #b42d12;
-    border-radius: 1rem;
     max-width: fit-content;
 }
 
-.contact-info {
-    border: 2px solid #b42d12;
+.thanks, .congratulations, .contact-info {
+    border: 2px dotted #b42d12;
     border-radius: 1rem;
+}
+
+.contact-info {
     padding: 0 1rem;
 }
 
