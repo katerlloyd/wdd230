@@ -155,7 +155,7 @@ a:hover {
     left: 50%;
     max-width: 400px;
     position: absolute;
-    text-shadow: -1px 1px 0 #ffffff,
+    text-shadow: -1px 2px 0 #ffffff,
     1px -1px 0 #ffffff,
     1px 1px 0 #ffffff;
     top: 50%;
@@ -233,8 +233,11 @@ div.weather-condition::first-letter {
     flex-flow: row wrap;
 }
 
-.flex-col {
+.flex-col, .close-button, .show-button {
     border: 2px solid #ffffff;
+}
+
+.flex-col {
     flex: 1 1 auto;
 }
 
@@ -262,7 +265,6 @@ div.weather-condition::first-letter {
 }
 
 .close-button, .show-button {
-    border: 2px solid #ffffff;
     padding: 0.5rem 1rem; 
 }
 
@@ -270,7 +272,7 @@ div.weather-condition::first-letter {
     float: right;
 }
 
-.attraction-item, .hero-img {
+.attraction-item, .hero-img, .boise-img, .carnival-img {
     box-shadow: 0 2.5px 10px 2.5px #00000066;
 }
 
@@ -315,7 +317,6 @@ input, select, textarea, .list-layout, .notice {
 }
 
 input, select, textarea, .list-layout {
-    border: 2px solid #b42d12;
     width: 100%;
 }
 
@@ -327,7 +328,7 @@ input:valid, select:valid {
     padding: 1rem 2rem;
 }
 
-footer, #submit, #send {
+footer, #submit, #send, .boise-img {
     margin-top: 1rem;
 }
 
@@ -335,7 +336,7 @@ footer, #submit, #send {
     width: fit-content;
 }
 
-.grid-layout .organization-div {
+.grid-layout .organization-div, input, select, textarea, .list-layout {
     border: 2px solid #b42d12;
 }
 
