@@ -17,7 +17,7 @@
         max-width: 85%;
     }
     
-    .goal-grid, .join-grid, .directors-grid, .info-grid {
+    .goal-grid, .join-grid, .directors-grid, .info-grid, .attractions {
         grid-template-columns: 1fr 1fr 1fr;
     }
 

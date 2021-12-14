@@ -15,8 +15,6 @@ anychart.onDocumentReady(function() {
     piechart.title("Racial Composition of Boise Population");
     piechart.data(racialdata);
     piechart.container('piechart-race-container');
-    piechart.legend().position("right");
-    piechart.legend().itemsLayout("vertical");
     piechart.sort("desc");
     piechart.draw();
 
@@ -54,8 +52,6 @@ let educationchart = anychart.pie();
 educationchart.title("Education Attained (25+ years-old)");
 educationchart.data(educationdata);
 educationchart.container('piechart-education-container');
-educationchart.legend().position("right");
-educationchart.legend().itemsLayout("vertical");
 educationchart.sort("desc");
 educationchart.draw();
 //#endregion

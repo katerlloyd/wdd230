@@ -348,6 +348,10 @@ div.weather-condition::first-letter {
     text-align: left;
 }
 
+.boise-grid img, .boise-grid div {
+    padding: 1rem;
+}
+
 .chart {
     width: 100%;
     height: 100%;
@@ -355,10 +359,27 @@ div.weather-condition::first-letter {
     padding: 0;
 }
 
+.attractions {
+    align-items: center;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.attraction-item {
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    padding: 1rem;
+}
+
 /* JOIN and CONTACT */
 
 .join h3, .boise h3 {
     color: #b42d12;
+}
+
+.boise .upcoming-events-grid h3 {
+    color: #ffffff;
 }
 
 .membership-grid {

@@ -27,7 +27,7 @@
 
     /* DIRECTORY */
 
-    .grid-layout {
+    .grid-layout, .attractions {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -37,7 +37,7 @@
 
     /* OTHER */
 
-    .mission-container, .columns-grid, .membership-grid, .join-grid, .contact-grid, .directors-grid, .info-grid {
+    .mission-container, .columns-grid, .membership-grid, .join-grid, .contact-grid, .directors-grid, .info-grid, .boise .upcoming-events-grid {
         grid-template-columns: 1fr 1fr;
     }
 }
