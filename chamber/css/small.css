@@ -316,12 +316,8 @@ input, select, textarea, .list-layout, .notice {
     font-size: 1.25rem;
 }
 
-input, select, textarea, .list-layout {
+input, select, textarea, .list-layout, iframe {
     width: 100%;
-}
-
-input:valid, select:valid {
-    background-color: none;
 }
 
 .thanks, .congratulations, #submit, #send {
